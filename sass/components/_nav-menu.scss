@@ -1,0 +1,20 @@
+.header {
+    &-front {
+        &-nav {
+            &-list {
+                margin-top: 2.57rem;
+                margin-left: 40.93rem;
+            }
+
+            &-image {
+                &--plus {
+                    width: 3.86rem;
+                    height: 3.86rem;
+                    margin-right: 11.14rem;
+                    margin-top: 1.29rem;
+                    margin-left: 4.25rem;
+                }
+            }
+        }
+    }
+}

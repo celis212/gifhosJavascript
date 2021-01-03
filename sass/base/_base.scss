@@ -21,18 +21,18 @@ time, mark, audio, video,
 }
 
 html {
-    font-size: 62.5%; // 1rem = 10px
+    font-size: 87.5%; // 1rem = 14px
+
+    @include respond(tab-port) {
+      font-size: 62.5%; // 1rem = 10px
+    }
 
     @include respond(tab-land) {
-      font-size: 56.25%;  // 1rem = 9px
-    }
-  
-    @include respond(tab-port) {
-      font-size: 50%; // 1rem = 8px
+      font-size: 75%; // 1rem = 12px
     }
   
     @include respond(big-desktop) {
-      font-size: 75%; // 1rem = 12px
+      font-size: 100%; // 1rem = 16px
     }
 }
   

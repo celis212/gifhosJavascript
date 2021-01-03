@@ -1,0 +1,21 @@
+.header {
+    &-front {
+        &-nav {
+            &-list {
+                &-link {
+                    list-style-type: none;
+                    text-decoration: none;
+
+                    &__item {
+                        font-family: $font-bold;
+                        font-weight: 800;
+                        font-size: 0.93rem;
+                        line-height: 1.14rem;
+                        color: $color-font-primary;
+                    }
+                }
+                
+            }
+        }
+    }
+}

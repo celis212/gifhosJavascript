@@ -1,57 +1,77 @@
-/*
-Error: File to import not found or unreadable: components/button.
-       Load path: D:/Users/Cesar/Documents/Cursos/Programacion/Acamica/Codigo/repository/project_two/sass
-        on line 15 of D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video,
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-10: @import "layout/header";
-11: @import "layout/grid";
-12: @import "layout/footer";
-13: @import "layout/navigation";
-14: 
-15: @import "components/button";
-16: @import "components/card";
-17: @import "components/compositions";
-18: @import "components/feature-box";
-19: @import "components/story";
-20: @import "components/bg-video";
+html {
+  font-size: 87.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 62.5%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 75%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
 
-Backtrace:
-D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss:15
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: components/button.\A        Load path: D:/Users/Cesar/Documents/Cursos/Programacion/Acamica/Codigo/repository/project_two/sass\A         on line 15 of D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss\A \A 10: @import \"layout/header\";\A 11: @import \"layout/grid\";\A 12: @import \"layout/footer\";\A 13: @import \"layout/navigation\";\A 14: \A 15: @import \"components/button\";\A 16: @import \"components/card\";\A 17: @import \"components/compositions\";\A 18: @import \"components/feature-box\";\A 19: @import \"components/story\";\A 20: @import \"components/bg-video\";"; }
+body {
+  box-sizing: border-box; }
+
+.header-front-nav-list-link {
+  list-style-type: none;
+  text-decoration: none; }
+  .header-front-nav-list-link__item {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 0.93rem;
+    line-height: 1.14rem;
+    color: #572EE5; }
+
+.header-line {
+  background-color: #572EE5;
+  width: 100%;
+  height: 0.36rem; }
+.header-front {
+  display: flex;
+  justify-content: space-between; }
+  .header-front-nav {
+    display: flex; }
+    .header-front-nav-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 26.68rem; }
+
+.header-front-logo--link__image {
+  width: 4.86rem;
+  height: 4.29rem;
+  margin-left: 11.14rem;
+  margin-top: 1.29rem; }
+
+.header-front-nav-list {
+  margin-top: 2.57rem;
+  margin-left: 40.93rem; }
+.header-front-nav-image--plus {
+  width: 3.86rem;
+  height: 3.86rem;
+  margin-right: 11.14rem;
+  margin-top: 1.29rem;
+  margin-left: 4.25rem; }
+
+/*# sourceMappingURL=main.css.map */
