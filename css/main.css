@@ -58,6 +58,12 @@ body {
       justify-content: space-between;
       width: 26.68rem; }
 
+.menu-check {
+  display: none; }
+
+.header-front-burger-image {
+  display: none; }
+
 .header-front-logo--link__image {
   width: 4.86rem;
   height: 4.29rem;

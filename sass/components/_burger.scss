@@ -1,0 +1,13 @@
+.menu-check {
+    display: none;
+}
+
+.header {
+    &-front {
+        &-burger {
+            &-image {
+                display: none;
+            }
+        }
+    }
+}
