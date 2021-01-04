@@ -1,83 +1,73 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video,
-*::after, *::before {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: inherit;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+/*
+Error: Invalid CSS after "    margin": expected "{", was "}"
+        on line 8 of D:/Users/Cesar/Documents/Cursos/Programacion/Acamica/Codigo/repository/project_two/sass/components/_burger.scss
+        from line 15 of D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss
 
-html {
-  font-size: 87.5%; }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 62.5%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 75%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 100%; } }
+3: }
+4: 
+5: .menu-check[type="checkbox"]:checked ~ .header .header-front .header-front-nav .header-front-nav-list {
+6:     position: absolute;
+7:     margin
+8: }
+9: 
+10: .header {
+11:     &-front {
+12:         &-burger {
+13:             &-image {
 
-body {
-  box-sizing: border-box; }
-
-.header-front-nav-list-link {
-  list-style-type: none;
-  text-decoration: none; }
-  .header-front-nav-list-link__item {
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 0.93rem;
-    line-height: 1.14rem;
-    color: #572EE5; }
-
-.header-line {
-  background-color: #572EE5;
-  width: 100%;
-  height: 0.36rem; }
-.header-front {
-  display: flex;
-  justify-content: space-between; }
-  .header-front-nav {
-    display: flex; }
-    .header-front-nav-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 26.68rem; }
-
-.menu-check {
-  display: none; }
-
-.header-front-burger-image {
-  display: none; }
-
-.header-front-logo--link__image {
-  width: 4.86rem;
-  height: 4.29rem;
-  margin-left: 11.14rem;
-  margin-top: 1.29rem; }
-
-.header-front-nav-list {
-  margin-top: 2.57rem;
-  margin-left: 40.93rem; }
-.header-front-nav-image--plus {
-  width: 3.86rem;
-  height: 3.86rem;
-  margin-right: 11.14rem;
-  margin-top: 1.29rem;
-  margin-left: 4.25rem; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+D:/Users/Cesar/Documents/Cursos/Programacion/Acamica/Codigo/repository/project_two/sass/components/_burger.scss:8
+D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss:15
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    margin\": expected \"{\", was \"}\"\A         on line 8 of D:/Users/Cesar/Documents/Cursos/Programacion/Acamica/Codigo/repository/project_two/sass/components/_burger.scss\A         from line 15 of D:\Users\Cesar\Documents\Cursos\Programacion\Acamica\Codigo\repository\project_two\sass\main.scss\A \A 3: }\A 4: \A 5: .menu-check[type=\"checkbox\"]:checked ~ .header .header-front .header-front-nav .header-front-nav-list {\A 6:     position: absolute;\A 7:     margin\A 8: }\A 9: \A 10: .header {\A 11:     &-front {\A 12:         &-burger {\A 13:             &-image {"; }

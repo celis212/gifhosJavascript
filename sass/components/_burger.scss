@@ -2,12 +2,27 @@
     display: none;
 }
 
+.menu-check[type="checkbox"]:checked ~ .header .header-front .header-front-nav .header-front-nav-list {
+    position: absolute;
+}
+
 .header {
-    &-front {
-        &-burger {
-            &-image {
+    &--front {
+        &--burger {
+            &--image {
                 display: none;
+
+                @include respond(phone) {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 4.5rem;
+                    margin-right: 2.6rem;
+                }
             }
+        }
+
+        &--nav {
+
         }
     }
 }
