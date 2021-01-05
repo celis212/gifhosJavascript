@@ -2,27 +2,68 @@
     display: none;
 }
 
-.menu-check[type="checkbox"]:checked ~ .header .header-front .header-front-nav .header-front-nav-list {
-    position: absolute;
+.menu-check[type="checkbox"]:checked + .header .header--front .header--front--burger {
+    height: 48.4rem;
+    padding-top: 1.95rem;
+}
+
+.menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image {
+    display: none;
+}
+
+.menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image-close {
+    display: block;
 }
 
 .header {
     &--front {
         &--burger {
-            &--image {
-                display: none;
+            display: none;
+            background-color: $color-primary;
+            overflow: hidden;
+            opacity: 90%;
+            width: 100%;
+            position: absolute;
+            top: 10.0rem;
+            padding-top: 0rem;
+            height: 0px;
+            text-align: center;
+            transition: height 0.4s ease;
+            transition: padding-top 0.4s ease;
 
-                @include respond(phone) {
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-top: 4.5rem;
-                    margin-right: 2.6rem;
+            @include respond(phone) {
+                display: block;
+            }
+
+            &--link {
+                &__item {
+                    margin-bottom: 1.25rem;
+                    margin-top: 1.25rem;
+
+                    &, &:link, &:visited {
+                        display: block;
+                    }
                 }
             }
         }
 
-        &--nav {
+        &--menu {
+            display: none;
+            margin-top: 4.5rem;
+            margin-right: 2.6rem;
 
+            @include respond(phone) {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            &--image-close {
+                display: none;
+            }
         }
     }
+}
+
+hr {
+    width: 10%;
 }
