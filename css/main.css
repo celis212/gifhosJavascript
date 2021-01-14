@@ -8,15 +8,15 @@
 
 html {
   font-size: 87.5%; }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 62.5%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 75%; } }
   @media (max-width: 75em) {
     html {
       font-size: 75%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 62.5%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 100%; } }
@@ -24,15 +24,20 @@ html {
 body {
   box-sizing: border-box; }
 
-.header--front--nav--list--link {
+.header--front--nav--list--link, .header--front--nav--list--link:link, .header--front--nav--list--link:visited {
   list-style-type: none;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 0.93rem;
+  line-height: 1.14rem;
+  color: #572EE5; }
+.header--front--nav--list--link:hover {
+  text-decoration: underline solid #5ED7C6 1px;
+  text-underline-offset: 1.5px; }
+.header--front--nav--list--link:active {
+  color: #9CAFC3;
   text-decoration: none; }
-  .header--front--nav--list--link__item {
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 0.93rem;
-    line-height: 1.14rem;
-    color: #572EE5; }
 .header--front--burger--link {
   list-style-type: none;
   text-decoration: none; }
@@ -97,9 +102,15 @@ body {
 .header--front--menu {
   display: none;
   margin-top: 4.5rem;
-  margin-right: 2.6rem;
-  display: flex;
-  align-items: flex-start; }
+  margin-right: 2.6rem; }
+  @media (max-width: 37.5em) {
+    .header--front--menu {
+      display: flex;
+      align-items: flex-start; } }
+  @media (max-width: 56.25em) {
+    .header--front--menu {
+      display: flex;
+      align-items: flex-start; } }
   .header--front--menu--image-close {
     display: none; }
 

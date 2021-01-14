@@ -3,16 +3,35 @@
         &--nav {
             &--list {
                 &--link {
-                    list-style-type: none;
-                    text-decoration: none;
 
-                    &__item {
+
+                    &, &:link, &:visited {
+                        list-style-type: none;
+                        text-decoration: none;
                         font-family: $font-bold;
                         font-weight: 800;
                         font-size: 0.93rem;
                         line-height: 1.14rem;
                         color: $color-font-primary;
+                        }
+
+                    &:hover {
+                        text-decoration: underline solid $color-text-hover 1px;
+                        text-underline-offset: 1.5px;
                     }
+
+                    &:active {
+                        color: $color-text-acive;
+                        text-decoration: none;
+                    }
+
+                        &__item {
+                            // font-family: $font-bold;
+                            // font-weight: 800;
+                            // font-size: 0.93rem;
+                            // line-height: 1.14rem;
+                            // color: $color-font-primary;
+                        }
                 }
             }
         }

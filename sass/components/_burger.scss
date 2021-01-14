@@ -54,8 +54,17 @@
             display: none;
             margin-top: 4.5rem;
             margin-right: 2.6rem;
-            display: flex;
-            align-items: flex-start;
+
+            @include respond(phone) {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            @include respond(tab-port) {
+                display: flex;
+                align-items: flex-start;
+            }
+            
 
             &--image-close {
                 display: none;
