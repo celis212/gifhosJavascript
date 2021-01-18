@@ -24,6 +24,21 @@ html {
 body {
   box-sizing: border-box; }
 
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(1), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(1), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(1) {
+  display: none; }
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(2) {
+  display: block; }
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(1) {
+  display: block; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+
 .header--front--nav--list--link, .header--front--nav--list--link:link, .header--front--nav--list--link:visited {
   list-style-type: none;
   text-decoration: none;
@@ -146,16 +161,16 @@ hr {
 .header--front--nav--list--link {
   margin-top: 2.57rem;
   margin-bottom: 2.71rem; }
-.header--front--nav--image {
+.header--front--nav--image, .header--front--nav--image:link, .header--front--nav--image:visited {
   margin: 1.29rem 11.14rem 1.29rem 4.25rem; }
-  .header--front--nav--image--plus {
+  .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
     width: 3.86rem;
     height: 3.86rem; }
     @media (max-width: 37.5em) {
-      .header--front--nav--image--plus {
+      .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
         display: none; } }
     @media (max-width: 56.25em) {
-      .header--front--nav--image--plus {
+      .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
         display: none; } }
 
 /*# sourceMappingURL=main.css.map */

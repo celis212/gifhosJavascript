@@ -1,0 +1,62 @@
+// button gif generator 
+.header {
+    &--front {
+        &--nav {
+            &--image {
+                &, &:link, &:visited {
+                    .header--front--nav--image--plus{
+                        &:nth-last-child(1) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(2) {
+                            display: none;
+                        }
+
+                        // &:nth-last-child(3) {
+                        //     display: block;
+                        // }
+                    }
+                    
+                }
+
+                &:hover {
+                    .header--front--nav--image--plus {
+                        // &:nth-last-child(1) {
+                        //     display: none;
+                        // }
+
+                        &:nth-last-child(2) {
+                            display: block;
+                        }
+
+                        &:nth-last-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+
+                &:active {
+                    .header--front--nav--image--plus {
+                        &:nth-last-child(1) {
+                            display: block;
+                        }
+
+                        &:nth-last-child(2) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
