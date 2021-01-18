@@ -1,0 +1,44 @@
+.link-media {
+    height: 8.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--access {
+        display: flex;
+        flex-direction: row;
+        height: 8.29rem;
+        justify-content: space-between;
+        align-items: center;
+        // align-self: center;
+        // align-content: center;
+
+        &--social-media {
+            display: flex;
+            flex-direction: row;
+            margin-left: 11.14rem;
+            
+            &--share-text {
+                margin-right: 1.21rem;
+            }
+
+            .fab {
+                text-decoration: none;
+                color: $color-social;
+                font-size: 1.43rem;
+                margin-right: 1.29rem;
+                // line-height: 2.33rem;
+            }
+        }
+
+        &--copyright {
+            margin-right: 11.29rem;
+        }
+    }
+    
+    &--footer-line {
+        height: 0.36rem;
+        width: 100%;
+        background-color: $color-primary;
+    }
+}

@@ -63,6 +63,19 @@ body {
     line-height: 3.0rem;
     color: #ffffff; }
 
+.link-media--access--share-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 0.93rem;
+  line-height: 1.07rem;
+  color: #000000; }
+.link-media--access--copyright {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 0.93rem;
+  line-height: 1.07rem;
+  color: #000000; }
+
 .header--line {
   background-color: #572EE5;
   width: 100%;
@@ -77,6 +90,35 @@ body {
       flex-direction: row;
       justify-content: space-between;
       width: 26.68rem; }
+
+.link-media {
+  height: 8.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .link-media--access {
+    display: flex;
+    flex-direction: row;
+    height: 8.29rem;
+    justify-content: space-between;
+    align-items: center; }
+    .link-media--access--social-media {
+      display: flex;
+      flex-direction: row;
+      margin-left: 11.14rem; }
+      .link-media--access--social-media--share-text {
+        margin-right: 1.21rem; }
+      .link-media--access--social-media .fab {
+        text-decoration: none;
+        color: #CDD6E0;
+        font-size: 1.43rem;
+        margin-right: 1.29rem; }
+    .link-media--access--copyright {
+      margin-right: 11.29rem; }
+  .link-media--footer-line {
+    height: 0.36rem;
+    width: 100%;
+    background-color: #572EE5; }
 
 .menu-check {
   display: none; }
@@ -161,16 +203,16 @@ hr {
 .header--front--nav--list--link {
   margin-top: 2.57rem;
   margin-bottom: 2.71rem; }
+@media (max-width: 37.5em) {
+  .header--front--nav--image {
+    display: none; } }
+@media (max-width: 56.25em) {
+  .header--front--nav--image {
+    display: none; } }
 .header--front--nav--image, .header--front--nav--image:link, .header--front--nav--image:visited {
   margin: 1.29rem 11.14rem 1.29rem 4.25rem; }
   .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
     width: 3.86rem;
     height: 3.86rem; }
-    @media (max-width: 37.5em) {
-      .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
-        display: none; } }
-    @media (max-width: 56.25em) {
-      .header--front--nav--image--plus, .header--front--nav--image:link--plus, .header--front--nav--image:visited--plus {
-        display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -42,3 +42,23 @@
         }
     }
 }
+
+.link-media{
+    &--access {
+        &--share-text {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 0.93rem;
+            line-height: 1.07rem;
+            color: $color-black;
+        }
+
+        &--copyright {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 0.93rem;
+            line-height: 1.07rem;
+            color: $color-black;
+        }
+    }
+}

@@ -17,6 +17,14 @@
             }
 
             &--image {
+                @include respond(phone) {
+                    display: none;
+                }
+
+                @include respond(tab-port) {
+                    display: none;
+                }
+
                 &, &:link, &:visited {
                     margin: 1.29rem 11.14rem 1.29rem 4.25rem;
 
@@ -24,13 +32,13 @@
                         width: 3.86rem;
                         height: 3.86rem;
 
-                        @include respond(phone) {
-                            display: none;
-                        }
+                        // @include respond(phone) {
+                        //     display: none;
+                        // }
 
-                        @include respond(tab-port) {
-                            display: none;
-                        }
+                        // @include respond(tab-port) {
+                        //     display: none;
+                        // }
                     }
                 }
             } 
