@@ -10,10 +10,37 @@
     <title>guifos</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <script src="main.js"></script>
+    <input type="checkbox" class="menu-check" id="menu-toggle">
+    <header class="header">
+        <div class="header--line"></div>
+        <div class="header--front">
+            <div class="header--front--logo">
+                <a class="header--front--logo--link" href="#home"><img  class="header--front--logo--link__image" src="./images/logo-desktop.svg" alt="guifos logo" /></a>
+            </div>  
+            <nav class="header--front--nav">
+                <ul class="header--front--nav--list">
+                    <a class="header--front--nav--list--link" onclick="darkMode()" href="#"><li class="header--front--nav--list--link__item">MODO NOCTURNO</li></a>  
+                    <a class="header--front--nav--list--link" href="#"><li class="header--front--nav--list--link__item">FAVORITOS</li></a>  
+                    <a class="header--front--nav--list--link" href="#"><li class="header--front--nav--list--link__item">MIS GUIFOS</li></a>  
+                </ul>
+                <a class="header--front--nav--image" href="#">
+                    <img class="header--front--nav--image--plus" src="./images/button-crear-gifo.svg" alt="desplegable menu" />
+                    <img class="header--front--nav--image--plus" src="./images/CTA-crear-gifo-hover.svg" alt="desplegable menu" />
+                    <img class="header--front--nav--image--plus" src="./images/CTA-crear-gifo-active.svg" alt="desplegable menu" />
+                </a>
+            </nav>
+            <ul class="header--front--burger">
+                <a class="header--front--burger--link" href="#"><li class="header--front--burger--link__item">Modo Nocturno</li><hr></a>
+                <a class="header--front--burger--link" href="#"><li class="header--front--burger--link__item">Favoritos</li><hr></a>
+                <a class="header--front--burger--link" href="#"><li class="header--front--burger--link__item">Mis GIFOS</li></a>
+            </ul>
+            <label for="menu-toggle" class="header--front--menu">
+                <img class="header--front--menu--image" src="./images/burger.svg" alt="burger menu" />
+                <img class="header--front--menu--image-close" src="./images/close.svg" alt="burger menu" />
+            </label>  
+        </div>
 
-        </nav>
     </header>
     <section>
         
