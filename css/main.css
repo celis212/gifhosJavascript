@@ -28,15 +28,74 @@ body {
   display: none; }
 .header--front--nav--image .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(2) {
   display: none; }
-.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(2) {
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(3), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(3), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(4), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(4), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(4) {
+  display: none; }
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(5), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(5), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(5) {
+  display: none; }
+.header--front--nav--image .header--front--nav--image--plus:nth-last-child(6), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(6), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(6) {
   display: block; }
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(1) {
+  display: none; }
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
 .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(3) {
   display: none; }
-.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(1) {
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(4) {
   display: block; }
-.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(2) {
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(5) {
   display: none; }
+.header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(6) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(1) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(2) {
+  display: block; }
 .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(4) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(5) {
+  display: none; }
+.header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(6) {
+  display: none; }
+
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(1), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(1), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(1) {
+  display: none; }
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(2), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(2), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(3), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(3), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(4), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(4), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(4) {
+  display: none; }
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(5), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(5), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(5) {
+  display: block; }
+.dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(6), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(6), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(6) {
+  display: none; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(1) {
+  display: none; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(3) {
+  display: block; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(4) {
+  display: none; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(5) {
+  display: none; }
+.dark .header--front--nav--image:hover .header--front--nav--image--plus:nth-last-child(6) {
+  display: none; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(1) {
+  display: block; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(2) {
+  display: none; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(3) {
+  display: none; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(4) {
+  display: none; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(5) {
+  display: none; }
+.dark .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(6) {
   display: none; }
 
 .header--front--nav--list--link, .header--front--nav--list--link:link, .header--front--nav--list--link:visited {
