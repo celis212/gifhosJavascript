@@ -63,18 +63,30 @@ body {
     line-height: 3.0rem;
     color: #ffffff; }
 
-.link-media--access--share-text {
+.link-media--access--social-media--share-text {
   font-family: Roboto;
   font-weight: 400;
   font-size: 0.93rem;
   line-height: 1.07rem;
   color: #000000; }
+  @media (max-width: 37.5em) {
+    .link-media--access--social-media--share-text {
+      font-size: 1.5rem;
+      line-height: 1.8rem; } }
+.link-media--access--social-media--image .fab {
+  text-decoration: none;
+  color: #CDD6E0;
+  font-size: 1.43rem; }
 .link-media--access--copyright {
   font-family: Roboto;
   font-weight: 400;
   font-size: 0.93rem;
   line-height: 1.07rem;
   color: #000000; }
+  @media (max-width: 37.5em) {
+    .link-media--access--copyright {
+      font-size: 1.4rem;
+      line-height: 2.0rem; } }
 
 .header--line {
   background-color: #572EE5;
@@ -92,29 +104,44 @@ body {
       width: 26.68rem; }
 
 .link-media {
-  height: 8.65rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .link-media--access {
     display: flex;
     flex-direction: row;
-    height: 8.29rem;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin: 3.32rem 11.29rem 3.46rem 11.14rem; }
+    @media (max-width: 37.5em) {
+      .link-media--access {
+        flex-direction: column;
+        margin: 0; } }
+    @media (max-width: 56.25em) {
+      .link-media--access {
+        margin: 3.32rem 7rem; } }
     .link-media--access--social-media {
       display: flex;
-      flex-direction: row;
-      margin-left: 11.14rem; }
+      flex-direction: row; }
+      @media (max-width: 37.5em) {
+        .link-media--access--social-media {
+          flex-direction: column;
+          margin: 4.7rem 0; } }
       .link-media--access--social-media--share-text {
-        margin-right: 1.21rem; }
-      .link-media--access--social-media .fab {
-        text-decoration: none;
-        color: #CDD6E0;
-        font-size: 1.43rem;
-        margin-right: 1.29rem; }
-    .link-media--access--copyright {
-      margin-right: 11.29rem; }
+        margin-right: 1.21rem;
+        align-self: flex-start; }
+        @media (max-width: 37.5em) {
+          .link-media--access--social-media--share-text {
+            margin: 0 0 2.2rem 0;
+            align-self: center; } }
+      .link-media--access--social-media--image .fa-twitter {
+        margin: 0 1.29rem; }
+        @media (max-width: 37.5em) {
+          .link-media--access--social-media--image .fa-twitter {
+            margin: 0 1.9rem; } }
+    @media (max-width: 37.5em) {
+      .link-media--access--copyright {
+        margin-bottom: 2.3rem; } }
   .link-media--footer-line {
     height: 0.36rem;
     width: 100%;

@@ -1,5 +1,4 @@
 .link-media {
-    height: 8.65rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,32 +6,53 @@
     &--access {
         display: flex;
         flex-direction: row;
-        height: 8.29rem;
         justify-content: space-between;
         align-items: center;
-        // align-self: center;
-        // align-content: center;
+        margin: 3.32rem 11.29rem 3.46rem 11.14rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            margin: 0;
+        }
+    
+        @include respond(tab-port) {
+            margin: 3.32rem 7rem;
+        }
 
         &--social-media {
             display: flex;
             flex-direction: row;
-            margin-left: 11.14rem;
+
+            @include respond(phone) {
+                flex-direction: column;
+                margin: 4.7rem 0;
+            }
             
             &--share-text {
                 margin-right: 1.21rem;
+                align-self: flex-start;
+
+                @include respond(phone) {
+                    margin: 0 0 2.2rem 0;
+                    align-self: center;
+                }
             }
 
-            .fab {
-                text-decoration: none;
-                color: $color-social;
-                font-size: 1.43rem;
-                margin-right: 1.29rem;
-                // line-height: 2.33rem;
+            &--image {
+                .fa-twitter {
+                    margin: 0 1.29rem;
+
+                    @include respond(phone) {
+                        margin: 0 1.9rem;
+                    }
+                }
             }
         }
 
         &--copyright {
-            margin-right: 11.29rem;
+            @include respond(phone) {
+                margin-bottom: 2.3rem;
+            }
         }
     }
     
