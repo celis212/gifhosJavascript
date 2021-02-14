@@ -74,4 +74,8 @@
 
 hr {
     width: 10%;
+    height: 1px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: $color-white;
 }
