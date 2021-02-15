@@ -65,7 +65,15 @@
                 align-items: flex-start;
             }
 
+            &--image-dark {
+                display: none;
+            }
+
             &--image-close {
+                display: none;
+            }
+
+            &--image-close-dark {
                 display: none;
             }
         }
@@ -78,4 +86,15 @@ hr {
     margin-left: 50%;
     transform: translate(-50%);
     background-color: $color-white;
+}
+
+.dark {
+    .header {
+        &--front {
+            &--burger {
+                background-color: $color-black;
+                opacity: 100%;
+            }
+        }
+    } 
 }

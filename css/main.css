@@ -311,7 +311,11 @@ body {
     .header--front--menu {
       display: flex;
       align-items: flex-start; } }
+  .header--front--menu--image-dark {
+    display: none; }
   .header--front--menu--image-close {
+    display: none; }
+  .header--front--menu--image-close-dark {
     display: none; }
 
 hr {
@@ -320,6 +324,10 @@ hr {
   margin-left: 50%;
   transform: translate(-50%);
   background-color: #ffffff; }
+
+.dark .header--front--burger {
+  background-color: #000000;
+  opacity: 100%; }
 
 .header--front--logo {
   margin: 1.29rem 0 0.86rem 11.14rem; }
