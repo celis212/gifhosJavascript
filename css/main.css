@@ -27,6 +27,10 @@ body {
 .dark {
   background-color: #37383C; }
 
+.header--front--logo--link .header--front--logo--link__image:nth-last-child(1), .header--front--logo--link:link .header--front--logo--link__image:nth-last-child(1), .header--front--logo--link:visited .header--front--logo--link__image:nth-last-child(1), .header--front--logo--link:hover .header--front--logo--link__image:nth-last-child(1), .header--front--logo--link:active .header--front--logo--link__image:nth-last-child(1) {
+  display: none; }
+.header--front--logo--link .header--front--logo--link__image:nth-last-child(2), .header--front--logo--link:link .header--front--logo--link__image:nth-last-child(2), .header--front--logo--link:visited .header--front--logo--link__image:nth-last-child(2), .header--front--logo--link:hover .header--front--logo--link__image:nth-last-child(2), .header--front--logo--link:active .header--front--logo--link__image:nth-last-child(2) {
+  display: block; }
 .header--front--nav--image .header--front--nav--image--plus:nth-last-child(1), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(1), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(1) {
   display: none; }
 .header--front--nav--image .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(2), .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(2) {
@@ -64,6 +68,10 @@ body {
 .header--front--nav--image:active .header--front--nav--image--plus:nth-last-child(6) {
   display: none; }
 
+.dark .header--front--logo--link .header--front--logo--link__image:nth-last-child(1), .dark .header--front--logo--link:link .header--front--logo--link__image:nth-last-child(1), .dark .header--front--logo--link:visited .header--front--logo--link__image:nth-last-child(1), .dark .header--front--logo--link:hover .header--front--logo--link__image:nth-last-child(1), .dark .header--front--logo--link:active .header--front--logo--link__image:nth-last-child(1) {
+  display: block; }
+.dark .header--front--logo--link .header--front--logo--link__image:nth-last-child(2), .dark .header--front--logo--link:link .header--front--logo--link__image:nth-last-child(2), .dark .header--front--logo--link:visited .header--front--logo--link__image:nth-last-child(2), .dark .header--front--logo--link:hover .header--front--logo--link__image:nth-last-child(2), .dark .header--front--logo--link:active .header--front--logo--link__image:nth-last-child(2) {
+  display: none; }
 .dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(1), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(1), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(1) {
   display: none; }
 .dark .header--front--nav--image .header--front--nav--image--plus:nth-last-child(2), .dark .header--front--nav--image:link .header--front--nav--image--plus:nth-last-child(2), .dark .header--front--nav--image:visited .header--front--nav--image--plus:nth-last-child(2) {
@@ -152,8 +160,11 @@ body {
       line-height: 1.8rem; } }
 .link-media--access--social-media--image .fab {
   text-decoration: none;
-  color: #CDD6E0;
   font-size: 1.43rem; }
+  .link-media--access--social-media--image .fab, .link-media--access--social-media--image .fab:link, .link-media--access--social-media--image .fab:visited {
+    color: #CDD6E0; }
+  .link-media--access--social-media--image .fab:hover, .link-media--access--social-media--image .fab:active {
+    color: #572EE5; }
 .link-media--access--copyright {
   font-family: Roboto;
   font-weight: 400;
@@ -180,8 +191,10 @@ body {
   text-decoration: none; }
 .dark .link-media--access--social-media--share-text {
   color: #ffffff; }
-.dark .link-media--access--social-media--image .fab {
+.dark .link-media--access--social-media--image .fab, .dark .link-media--access--social-media--image .fab:link, .dark .link-media--access--social-media--image .fab:visited {
   color: #CDD6E0; }
+.dark .link-media--access--social-media--image .fab:hover, .dark .link-media--access--social-media--image .fab:active {
+  color: #ffffff; }
 .dark .link-media--access--copyright {
   color: #ffffff; }
 
@@ -199,6 +212,9 @@ body {
       flex-direction: row;
       justify-content: space-between;
       width: 26.68rem; }
+
+.dark .header--line {
+  background-color: #000000; }
 
 .link-media {
   display: flex;
@@ -243,6 +259,9 @@ body {
     height: 0.36rem;
     width: 100%;
     background-color: #572EE5; }
+
+.dark .link-media--footer-line {
+  background-color: #000000; }
 
 .menu-check {
   display: none; }

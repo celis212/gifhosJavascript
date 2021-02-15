@@ -1,6 +1,23 @@
 // button gif generator 
 .header {
     &--front {
+        //LOGO SHOW LIGTH MODE
+        &--logo {
+            &--link {
+                &, &:link, &:visited, &:hover, &:active {
+                    .header--front--logo--link__image {
+                        &:nth-last-child(1) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(2) {
+                            display: block; 
+                        }
+                    }
+                }
+            }
+        } 
+        //LIGTH MODE MADE A GIF ICON
         &--nav {
             &--image {
                 &, &:link, &:visited {
@@ -89,12 +106,33 @@
                 }
             }
         }
+        //LIGTH MODE BURGER MENU ICON
+        &--menu {
+            
+        }
     }
 }
 
 .dark {
     .header {
         &--front {
+            //LOGO SHOW DARK MODE
+            &--logo {
+                &--link {
+                    &, &:link, &:visited, &:hover, &:active {
+                        .header--front--logo--link__image {
+                            &:nth-last-child(1) {
+                                display: block;
+                            }
+
+                            &:nth-last-child(2) {
+                                display: none; 
+                            }
+                        }
+                    }
+                }
+            }
+
             &--nav {
                 &--image {
                     &, &:link, &:visited {

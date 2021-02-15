@@ -80,8 +80,15 @@
             &--image{
                 .fab {
                     text-decoration: none;
-                    color: $color-social;
                     font-size: 1.43rem;
+
+                    &, &:link, &:visited {
+                        color: $color-social;
+                    }
+                        
+                    &:hover, &:active {
+                        color: $color-font-primary;
+                    }
                 }
             }
         }
@@ -141,7 +148,13 @@
     
                 &--image{
                     .fab {
-                        color: $color-social;
+                        &, &:link, &:visited {
+                            color: $color-social;
+                        }
+                                
+                        &:hover, &:active {
+                            color: $color-white;
+                        }
                     }
                 }
             }

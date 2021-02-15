@@ -21,3 +21,12 @@
         }
     }
 }
+
+//DARK MODE
+.dark {
+    .header {
+        &--line {
+            background-color: $color-black;
+        }
+    }
+}
