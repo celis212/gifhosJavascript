@@ -1,6 +1,23 @@
 // button gif generator 
 .header {
     &--front {
+        //LOGO SHOW LIGTH MODE
+        &--logo {
+            &--link {
+                &, &:link, &:visited, &:hover, &:active {
+                    .header--front--logo--link__image {
+                        &:nth-last-child(1) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(2) {
+                            display: block; 
+                        }
+                    }
+                }
+            }
+        } 
+        //LIGTH MODE MADE A GIF ICON
         &--nav {
             &--image {
                 &, &:link, &:visited {
@@ -10,27 +27,51 @@
                         }
 
                         &:nth-last-child(2) {
+                            display: none; 
+                        }
+
+                        &:nth-last-child(3) {
                             display: none;
                         }
 
-                        // &:nth-last-child(3) {
-                        //     display: block;
-                        // }
+                        &:nth-last-child(4) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(5) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(6) {
+                            display: block;
+                        }
                     }
                     
                 }
 
                 &:hover {
                     .header--front--nav--image--plus {
-                        // &:nth-last-child(1) {
-                        //     display: none;
-                        // }
+                        &:nth-last-child(1) {
+                            display: none;
+                        }
 
                         &:nth-last-child(2) {
-                            display: block;
+                            display: none; 
                         }
 
                         &:nth-last-child(3) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(4) {
+                            display: block;
+                        }
+
+                        &:nth-last-child(5) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(6) {
                             display: none;
                         }
                     }
@@ -39,14 +80,26 @@
                 &:active {
                     .header--front--nav--image--plus {
                         &:nth-last-child(1) {
-                            display: block;
-                        }
-
-                        &:nth-last-child(2) {
                             display: none;
                         }
 
+                        &:nth-last-child(2) {
+                            display: block; 
+                        }
+
                         &:nth-last-child(3) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(4) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(5) {
+                            display: none;
+                        }
+
+                        &:nth-last-child(6) {
                             display: none;
                         }
                     }
@@ -56,7 +109,117 @@
     }
 }
 
+.dark {
+    .header {
+        &--front {
+            //LOGO SHOW DARK MODE
+            &--logo {
+                &--link {
+                    &, &:link, &:visited, &:hover, &:active {
+                        .header--front--logo--link__image {
+                            &:nth-last-child(1) {
+                                display: block;
+                            }
 
+                            &:nth-last-child(2) {
+                                display: none; 
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--nav {
+                &--image {
+                    &, &:link, &:visited {
+                        .header--front--nav--image--plus{
+                            &:nth-last-child(1) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(2) {
+                                display: none; 
+                            }
+    
+                            &:nth-last-child(3) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(4) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(5) {
+                                display: block;
+                            }
+    
+                            &:nth-last-child(6) {
+                                display: none;
+                            }
+                        }
+                        
+                    }
+    
+                    &:hover {
+                        .header--front--nav--image--plus {
+                            &:nth-last-child(1) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(2) {
+                                display: none; 
+                            }
+    
+                            &:nth-last-child(3) {
+                                display: block;
+                            }
+    
+                            &:nth-last-child(4) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(5) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(6) {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    &:active {
+                        .header--front--nav--image--plus {
+                            &:nth-last-child(1) {
+                                display: block;
+                            }
+    
+                            &:nth-last-child(2) {
+                                display: none; 
+                            }
+    
+                            &:nth-last-child(3) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(4) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(5) {
+                                display: none;
+                            }
+    
+                            &:nth-last-child(6) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

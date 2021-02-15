@@ -1,0 +1,73 @@
+.link-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--access {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3.32rem 11.29rem 3.46rem 11.14rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            margin: 0;
+        }
+    
+        @include respond(tab-port) {
+            margin: 3.32rem 5rem;
+        }
+
+        &--social-media {
+            display: flex;
+            flex-direction: row;
+
+            @include respond(phone) {
+                flex-direction: column;
+                margin: 4.7rem 0;
+            }
+            
+            &--share-text {
+                margin-right: 1.21rem;
+                align-self: flex-start;
+
+                @include respond(phone) {
+                    margin: 0 0 2.2rem 0;
+                    align-self: center;
+                }
+            }
+
+            &--image {
+                .fa-twitter {
+                    margin: 0 1.29rem;
+
+                    @include respond(phone) {
+                        margin: 0 1.9rem;
+                    }
+                }
+            }
+        }
+
+        &--copyright {
+            @include respond(phone) {
+                margin-bottom: 2.3rem;
+            }
+        }
+    }
+    
+    &--footer-line {
+        height: 0.36rem;
+        width: 100%;
+        background-color: $color-primary;
+    }
+}
+
+//DARK MODE
+.dark {
+    .link-media {
+        &--footer-line {
+            background-color: $color-black;
+        }
+    }
+}

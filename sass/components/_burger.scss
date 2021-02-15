@@ -64,9 +64,16 @@
                 display: flex;
                 align-items: flex-start;
             }
-            
+
+            &--image-dark {
+                display: none;
+            }
 
             &--image-close {
+                display: none;
+            }
+
+            &--image-close-dark {
                 display: none;
             }
         }
@@ -75,4 +82,19 @@
 
 hr {
     width: 10%;
+    height: 1px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: $color-white;
+}
+
+.dark {
+    .header {
+        &--front {
+            &--burger {
+                background-color: $color-black;
+                opacity: 100%;
+            }
+        }
+    } 
 }

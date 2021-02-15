@@ -1,3 +1,11 @@
+#nav-dark-mode,  #burger-dark-mode {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
 .header {
     &--front {
         &--nav {
@@ -19,7 +27,7 @@
                     }
 
                     &:active {
-                        color: $color-text-acive;
+                        color: $color-text-active;
                         text-decoration: none;
                     }
                 }
@@ -38,6 +46,121 @@
                     line-height: 3.0rem;
                     color: $color-white;
                 }
+            }
+        }
+    }
+}
+
+.link-media{
+    &--access {
+        &--social-media {
+            &--share-text {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 0.93rem;
+                line-height: 1.07rem;
+                color: $color-black;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;   
+                }
+
+                @include respond(tab-port) {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;   
+                }
+
+                @include respond(tab-land) {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;   
+                }
+            }
+
+            &--image{
+                .fab {
+                    text-decoration: none;
+                    font-size: 1.43rem;
+
+                    &, &:link, &:visited {
+                        color: $color-social;
+                    }
+                        
+                    &:hover, &:active {
+                        color: $color-font-primary;
+                    }
+                }
+            }
+        }
+
+        &--copyright {
+            font-family: $font-roboto;
+            font-weight: 400;
+            font-size: 0.93rem;
+            line-height: 1.07rem;
+            color: $color-black;
+
+            @include respond(phone) {
+                font-size: 1.4rem;
+                line-height: 2rem;   
+            }
+
+            @include respond(tab-port) {
+                font-size: 1.2rem;
+                line-height: 2rem;   
+            }
+
+            @include respond(tab-land) {
+                font-size: 1.2rem;
+                line-height: 2rem;   
+            }
+        }
+    }
+}
+
+//DARK MODE
+.dark {
+    .header {
+        &--front {
+            &--nav {
+                &--list {
+                    &--link {
+                        &, &:link, &:visited {
+                            color: $color-white;
+                            }
+    
+                        &:active {
+                            color: $color-text-active;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .link-media{
+        &--access {
+            &--social-media {
+                &--share-text {
+                    color: $color-white;
+                }
+    
+                &--image{
+                    .fab {
+                        &, &:link, &:visited {
+                            color: $color-social;
+                        }
+                                
+                        &:hover, &:active {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+    
+            &--copyright {
+                color: $color-white;
             }
         }
     }
