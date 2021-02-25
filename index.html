@@ -51,8 +51,14 @@
     </header>
     <section class="search">
         <div class="search--title">Inspírate, busca, guarda, y crea los mejores <span class="search--title__gifos">GIFOS</span></div>
-        <div class="search--image"></div>
-        <div class="search--bar"></div>
+        <div class="search--image">
+            <img src="./images/ilustra_header.svg" alt="introduction image of header"/>
+        </div>
+        <form action="/action_page.php" class="search--bar">
+            <label for="g-search"></label>
+            <input type="text" class="search--bar--input" name="g-search" value="Busca GIFOS y más">
+            <input type="submit" value="Submit">
+        </form>
         <div class="search--trending">
             <div class="search--trending--title">Trending:</div>
             <div class="search--trending-recomend"></div>
@@ -76,5 +82,6 @@
         <div class="link-media--footer-line"></div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/trending.js"></script>
 </body>
 </html>
