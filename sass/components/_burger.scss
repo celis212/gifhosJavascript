@@ -1,83 +1,123 @@
-.menu-check {
+// .menu-check {
+//     display: none;
+// }
+
+// .menu-check[type="checkbox"]:checked + .header .header--front .header--front--burger {
+// .menu-check[type="checkbox"]:checked + .header .header__burger {
+//     height: 48.4rem;
+//     padding-top: 1.95rem;
+// }
+
+// .menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image {
+// .menu-check[type="checkbox"]:checked + .header .header--front--menu .header--front--menu--image {
+//     display: none;
+// }
+
+// .menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image-close {
+// .menu-check[type="checkbox"]:checked + .header .header--front--menu .header--front--menu--image-close {
+//     display: block;
+// }
+
+// .header {
+.burger-menu{
+
+  &__check{
     display: none;
-}
-
-.menu-check[type="checkbox"]:checked + .header .header--front .header--front--burger {
-    height: 48.4rem;
-    padding-top: 1.95rem;
-}
-
-.menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image {
+  }
+  //&--front {
+  // &--burger {
+  &__options {
     display: none;
-}
+    background-color: $color-primary;
+    overflow: hidden;
+    opacity: 90%;
+    width: 100%;
+    position: absolute;
+    top: 10.0rem;
+    padding-top: 0rem;
+    height: 0px;
+    text-align: center;
+    transition: height 0.4s ease;
+    transition: padding-top 0.4s ease;
 
-.menu-check[type="checkbox"]:checked + .header .header--front .header--front--menu .header--front--menu--image-close {
-    display: block;
-}
-
-.header {
-    &--front {
-        &--burger {
-            display: none;
-            background-color: $color-primary;
-            overflow: hidden;
-            opacity: 90%;
-            width: 100%;
-            position: absolute;
-            top: 10.0rem;
-            padding-top: 0rem;
-            height: 0px;
-            text-align: center;
-            transition: height 0.4s ease;
-            transition: padding-top 0.4s ease;
-
-            @include respond(phone) {
-                display: block;
-            }
-
-            @include respond(tab-port) {
-                display: block;
-            }
-
-            &--link {
-                &__item {
-                    margin: 1.25rem 0;
-
-                    &, &:link, &:visited {
-                        display: block;
-                    }
-                }
-            }
-        }
-
-        &--menu {
-            display: none;
-            margin-top: 4.5rem;
-            margin-right: 2.6rem;
-
-            @include respond(phone) {
-                display: flex;
-                align-items: flex-start;
-            }
-
-            @include respond(tab-port) {
-                display: flex;
-                align-items: flex-start;
-            }
-
-            &--image-dark {
-                display: none;
-            }
-
-            &--image-close {
-                display: none;
-            }
-
-            &--image-close-dark {
-                display: none;
-            }
-        }
+    @include respond(tab-port) {
+        display: block;
     }
+
+    @include respond(phone) {
+        display: block;
+    }
+    // &--link {
+    &__link {
+    // &__item {
+      margin: 1.25rem 0;
+
+      &, &:link, &:visited {
+        display: block;
+      }
+    // }
+    }
+  }
+  
+  //&--menu {
+  &__image {
+    &__icon {
+      cursor: pointer;
+      display: none;
+      margin-top: 4.5rem;
+      margin-right: 2.6rem;
+
+      @include respond(tab-port) {
+        position: fixed;
+        right: 0;
+        background-image: url('../../images/burger.svg');
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 14px;
+        display: block;
+        // flex-direction: row;
+        // justify-content: flex-end;
+        // align-items: flex-end;
+        // align-self: flex-end;
+      }
+
+      // @include respond(phone) {
+        // display: flex;
+        // align-items: flex-start;
+      // }
+    // &--image-dark {
+    //     display: none;
+    // }
+
+    // &--image-close {
+    //     display: none;
+    // }
+
+    // &--image-close-dark {
+    //     display: none;
+    // }
+    }
+  }
+  
+  &__check:checked + &__options{
+    // &__icon{
+    @include respond(tab-port) {
+      height: 48.4rem;
+      padding-top: 1.95rem;
+      //background-repeat: no-repeat;
+    }
+  }
+
+  &__check:checked ~ &__image &__image__icon{
+    // &__icon{
+      @include respond(tab-port) {
+        background-image: url('../../images/close.svg');
+        //background-repeat: no-repeat;
+      }
+    // }
+  }
+    // }
+  
 }
 
 hr {
@@ -89,12 +129,31 @@ hr {
 }
 
 .dark {
-    .header {
-        &--front {
-            &--burger {
-                background-color: $color-black;
-                opacity: 100%;
-            }
+  // .header {
+    // &--front {
+    // &--burger {
+   .burger-menu {
+    &__options{
+      @include respond(tab-port) {
+        background-color: $color-black;
+        opacity: 100%;
+      }
+    }
+    //}
+  //}
+
+    &__image{
+      &__icon{
+        @include respond(tab-port) {
+          background-image: url('../../images/burger-modo-noct.svg');
         }
-    } 
+      }
+    }
+
+    &__check:checked ~ .burger-menu__image .burger-menu__image__icon {
+      @include respond(tab-port) {
+        background-image: url('../../images/close-modo-noct.svg');
+      }
+    }
+   } 
 }

@@ -1,33 +1,35 @@
-.header {
-    &--front {
-        &--logo {
-            margin: 1.29rem 0 0.86rem 11.14rem;
+// .header {
+    // &--front {
+        // &--logo {
+        // &__logo {
+            // margin: 1.29rem 0 0.86rem 11.14rem;
 
-            @include respond(phone) {
-                margin: 2.9rem 0 1.7rem 2.2rem;
-            }
+            // @include respond(phone) {
+            //     margin: 2.9rem 0 1.7rem 2.2rem;
+            // }
 
-            @include respond(tab-port) {
-                margin: 2.9rem 0 1.7rem 2.2rem;
-            }
+            // @include respond(tab-port) {
+            //     margin: 2.9rem 0 1.7rem 2.2rem;
+            // }
 
-            &--link {
-                &__image {
-                    width: 4.86rem;
-                    height: 4.29rem;
+            // &--link {
+            //&__link {
+                //&__image {
+                    // width: 4.86rem;
+                    // height: 4.29rem;
                     
 
-                    @include respond(phone) {
-                        width: 5.6rem;
-                        height: 4.9rem;
-                    }
+                    // @include respond(phone) {
+                    //     width: 5.6rem;
+                    //     height: 4.9rem;
+                    // }
 
-                    @include respond(tab-port) {
-                        width: 5.6rem;
-                        height: 4.9rem;
-                    }
-                }
-            }
-        }
-    }
-}
+                    // @include respond(tab-port) {
+                    //     width: 5.6rem;
+                    //     height: 4.9rem;
+                    // }
+              //  }
+            //}
+        // }
+    // }
+// }

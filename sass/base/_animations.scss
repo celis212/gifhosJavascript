@@ -1,225 +1,234 @@
 // button gif generator 
-.header {
-    &--front {
+// .header {
+    //&--front {
         //LOGO SHOW LIGTH MODE
-        &--logo {
-            &--link {
-                &, &:link, &:visited, &:hover, &:active {
-                    .header--front--logo--link__image {
-                        &:nth-last-child(1) {
-                            display: none;
-                        }
+        // &--logo {
+        // &__logo {
+            //&--link {
+            //&__link {
+                // &, &:link, &:visited, &:hover, &:active {
+                    // .header--front--logo--link__image {
+                    // .header__logo {
+                    //     &:nth-last-child(1) {
+                    //         display: none;
+                    //     }
 
-                        &:nth-last-child(2) {
-                            display: block; 
-                        }
-                    }
-                }
-            }
-        } 
+                    //     &:nth-last-child(2) {
+                    //         display: block; 
+                    //     }
+                    // }
+                // }
+            //}
+        // } 
         //LIGTH MODE MADE A GIF ICON
-        &--nav {
-            &--image {
-                &, &:link, &:visited {
-                    .header--front--nav--image--plus{
-                        &:nth-last-child(1) {
-                            display: none;
-                        }
+        // &--nav {
+        // &__nav {
+        //     //&--image {
+        //     &__add-btn {
+        //         &, &:link, &:visited {
+        //             // .header--front--nav--image--plus{
+        //             .header__nav__add-btn{
+        //                 &:nth-last-child(1) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(2) {
-                            display: none; 
-                        }
+        //                 &:nth-last-child(2) {
+        //                     display: none; 
+        //                 }
 
-                        &:nth-last-child(3) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(3) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(4) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(4) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(5) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(5) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(6) {
-                            display: block;
-                        }
-                    }
+        //                 &:nth-last-child(6) {
+        //                     display: block;
+        //                 }
+        //             }
                     
-                }
+        //         }
 
-                &:hover {
-                    .header--front--nav--image--plus {
-                        &:nth-last-child(1) {
-                            display: none;
-                        }
+        //         &:hover {
+        //             .header--front--nav--image--plus {
+        //                 &:nth-last-child(1) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(2) {
-                            display: none; 
-                        }
+        //                 &:nth-last-child(2) {
+        //                     display: none; 
+        //                 }
 
-                        &:nth-last-child(3) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(3) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(4) {
-                            display: block;
-                        }
+        //                 &:nth-last-child(4) {
+        //                     display: block;
+        //                 }
 
-                        &:nth-last-child(5) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(5) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(6) {
-                            display: none;
-                        }
-                    }
-                }
+        //                 &:nth-last-child(6) {
+        //                     display: none;
+        //                 }
+        //             }
+        //         }
 
-                &:active {
-                    .header--front--nav--image--plus {
-                        &:nth-last-child(1) {
-                            display: none;
-                        }
+        //         &:active {
+        //             .header--front--nav--image--plus {
+        //                 &:nth-last-child(1) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(2) {
-                            display: block; 
-                        }
+        //                 &:nth-last-child(2) {
+        //                     display: block; 
+        //                 }
 
-                        &:nth-last-child(3) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(3) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(4) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(4) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(5) {
-                            display: none;
-                        }
+        //                 &:nth-last-child(5) {
+        //                     display: none;
+        //                 }
 
-                        &:nth-last-child(6) {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+        //                 &:nth-last-child(6) {
+        //                     display: none;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    //}
+// }
 
-.dark {
-    .header {
-        &--front {
-            //LOGO SHOW DARK MODE
-            &--logo {
-                &--link {
-                    &, &:link, &:visited, &:hover, &:active {
-                        .header--front--logo--link__image {
-                            &:nth-last-child(1) {
-                                display: block;
-                            }
+// .dark {
+    // .header {
+        // &--front {
+            // LOGO SHOW DARK MODE
+            // &__logo {
+            // &--logo {
+                // &__list {
+                // &--link {
+                    // &, &:link, &:visited, &:hover, &:active {
+                    //     .header__logo {
+                        // .header--front--logo--link__image {
+            //                 &:nth-last-child(1) {
+            //                     display: block;
+            //                 }
 
-                            &:nth-last-child(2) {
-                                display: none; 
-                            }
-                        }
-                    }
-                }
-            }
+            //                 &:nth-last-child(2) {
+            //                     display: none; 
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
 
-            &--nav {
-                &--image {
-                    &, &:link, &:visited {
-                        .header--front--nav--image--plus{
-                            &:nth-last-child(1) {
-                                display: none;
-                            }
+            // &--nav {
+            //     &--image {
+            //         &, &:link, &:visited {
+            //             .header--front--nav--image--plus{
+            //                 &:nth-last-child(1) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(2) {
-                                display: none; 
-                            }
+            //                 &:nth-last-child(2) {
+            //                     display: none; 
+            //                 }
     
-                            &:nth-last-child(3) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(3) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(4) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(4) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(5) {
-                                display: block;
-                            }
+            //                 &:nth-last-child(5) {
+            //                     display: block;
+            //                 }
     
-                            &:nth-last-child(6) {
-                                display: none;
-                            }
-                        }
+            //                 &:nth-last-child(6) {
+            //                     display: none;
+            //                 }
+            //             }
                         
-                    }
+            //         }
     
-                    &:hover {
-                        .header--front--nav--image--plus {
-                            &:nth-last-child(1) {
-                                display: none;
-                            }
+            //         &:hover {
+            //             .header--front--nav--image--plus {
+            //                 &:nth-last-child(1) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(2) {
-                                display: none; 
-                            }
+            //                 &:nth-last-child(2) {
+            //                     display: none; 
+            //                 }
     
-                            &:nth-last-child(3) {
-                                display: block;
-                            }
+            //                 &:nth-last-child(3) {
+            //                     display: block;
+            //                 }
     
-                            &:nth-last-child(4) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(4) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(5) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(5) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(6) {
-                                display: none;
-                            }
-                        }
-                    }
+            //                 &:nth-last-child(6) {
+            //                     display: none;
+            //                 }
+            //             }
+            //         }
     
-                    &:active {
-                        .header--front--nav--image--plus {
-                            &:nth-last-child(1) {
-                                display: block;
-                            }
+            //         &:active {
+            //             .header--front--nav--image--plus {
+            //                 &:nth-last-child(1) {
+            //                     display: block;
+            //                 }
     
-                            &:nth-last-child(2) {
-                                display: none; 
-                            }
+            //                 &:nth-last-child(2) {
+            //                     display: none; 
+            //                 }
     
-                            &:nth-last-child(3) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(3) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(4) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(4) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(5) {
-                                display: none;
-                            }
+            //                 &:nth-last-child(5) {
+            //                     display: none;
+            //                 }
     
-                            &:nth-last-child(6) {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+            //                 &:nth-last-child(6) {
+            //                     display: none;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+        //}
+//     }
+// }
 
 
 
