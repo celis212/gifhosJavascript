@@ -1,34 +1,23 @@
-// .link-media {
-.footer{
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+.footer {
   border-bottom: solid 5.1px $color-primary; 
-
-  // &--access {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
   align-items: center;
   padding: 0 11.29rem 0 11.14rem;
   height: 8.29rem;
-  // margin: 3.32rem 11.29rem 3.46rem 11.14rem;
 
   @include respond(tab-port) {
     padding: 0 3.32rem;
-    // margin: 3.32rem 5rem;
   }
 
   @include respond(phone) {
     flex-direction: column;
     padding: 0;
     height: 19.6rem;
-    // padding: ;144
   }
 
   &__share-text {
     margin-right: 1.21rem;
-    // align-self: flex-start;
 
     @include respond(phone) {
       margin: 4.7rem 0 0 0;
@@ -41,25 +30,11 @@
     display: flex;
     flex-direction: row;
     margin-right: 1.21rem;
-    // align-self: flex-start;
 
     @include respond(phone) {
-      // flex-direction: column;
       margin: 2.4rem 0 0 0;
     }
       
-    // &--share-text {
-    //   &__share-text {
-    //     margin-right: 1.21rem;
-    //     // align-self: flex-start;
-    
-    //     @include respond(phone) {
-    //       margin: 0 0 2.2rem 0;
-    //       align-self: center;
-    //     }
-    // }
-
-      // &--image {
     .fa-twitter {
       margin: 0 1.29rem;
 
@@ -67,10 +42,8 @@
         margin: 0 1.9rem;
       }
     }
-      // }
   }
 
-  // &--copyright {
     &__copyright {
       margin-left: auto;
 
@@ -78,22 +51,11 @@
         margin: 4.78rem 0 2.3rem 0;
       }
   }
-    
-    
-    // &--footer-line {
-    //     height: 0.36rem;
-    //     width: 100%;
-    //     background-color: $color-primary;
-    // }
 }
-// }
 
 //DARK MODE
 .dark {
-    // .link-media {
-        // &--footer-line {
   .footer{
     border-bottom: solid 5.1px $color-black;
   }
-    // }
 }

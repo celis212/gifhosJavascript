@@ -6,32 +6,24 @@
   outline: inherit;
 }
 
-// &--burger {
 .burger-menu {
   &__options{
-    // &--link {
     &__link {
       width: 100%;
       list-style-type: none;
       text-decoration: none;
             
-      // &__item {
       font-family: $font-bold;
       font-weight: 800;
       font-size: 1.5rem;
       line-height: 3.0rem;
       color: $color-white;
-      //}
     }
   }
 }
-//}
 
 .header {
-  //&--front {
-  // &--nav {
   &__nav {
-    // &--list {
     &__list {
       list-style: none;
 
@@ -60,12 +52,8 @@
   }
 }
 
-// .link-media{
-.footer{
-    // &--access {
-        // &--social-media {
-            // &--share-text {
-  &__share-text{
+.footer {
+  &__share-text {
     font-family: $font-roboto;
     font-weight: 400;
     font-size: 0.93rem;
@@ -76,75 +64,51 @@
       font-size: 1.5rem;
       line-height: 1.8rem;   
     }
-
-      // @include respond(phone) {
-      //     font-size: 1.5rem;
-      //     line-height: 1.8rem;   
-      // }
-
-      // @include respond(tab-port) {
-      //     font-size: 1.5rem;
-      //     line-height: 1.8rem;   
-      // }
-
-                
   }
 
-            // &--image{
-  &__media{
+  &__media {
     &__link {
       text-decoration: none;
       font-size: 1.43rem;
 
       &, &:link, &:visited {
-          color: $color-social;
+        color: $color-social;
       }
           
       &:hover, &:active {
-          color: $color-font-primary;
+        color: $color-font-primary;
       }
     }
   }
-      // }
-  // }
 
   &__copyright {
-      font-family: $font-roboto;
-      font-weight: 400;
-      font-size: 0.93rem;
-      line-height: 1.07rem;
-      color: $color-black;
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 0.93rem;
+    line-height: 1.07rem;
+    color: $color-black;
 
-      @include respond(tab-land) {
-        font-size: 1.2rem;
-        line-height: 2rem;   
-      }
+    @include respond(tab-land) {
+      font-size: 1.2rem;
+      line-height: 2rem;   
+    }
 
-      @include respond(phone) {
-          font-size: 1.4rem;
-          line-height: 2rem;   
-      }
-
-      // @include respond(tab-port) {
-      //     font-size: 1.2rem;
-      //     line-height: 2rem;   
-      // }
+    @include respond(phone) {
+      font-size: 1.4rem;
+      line-height: 2rem;   
+    }
   }
-    // }
 }
 
 //DARK MODE
 .dark {
   .header {
-    //&--front {
-    //&--nav {
     &__nav {
-      //&--list {
       &__list {
         &-link {
           &, &:link, &:visited {
             color: $color-white;
-              }
+          }
 
           &:active {
             color: $color-text-active;
@@ -153,21 +117,14 @@
         }
       }
     }
-  //}
   }
     
-  // .link-media{
   .footer {
-    // &--access {
-    // &--social-media {
-    // &--share-text {
     &__share-text {  
       color: $color-white;
     }
     
-    // &--image{
     &__media {
-      // .fab {
       &__link {
         &, &:link, &:visited {
           color: $color-social;
@@ -179,11 +136,8 @@
       }
     }
     
-    // &--copyright {
     &__copyright {
         color: $color-white;
     }
-        // }
-    // }
   }
 }

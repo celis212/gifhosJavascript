@@ -1,39 +1,20 @@
-// .line {
-//   background-color: $color-primary;
-//   display: block;
-//   width: 100%;
-//   height: 0.36rem;
-// }
-
 .header {
   border-top: solid 5px $color-primary;
   padding: 0 11.14rem;
   display: flex;
-  //justify-content: space-between;
-  //margin-right: auto;
 
   &__logo-box{
-    // display: block;
     margin-right: auto;
   }
 
   &__logo{
-    //width: 4.86rem;
-    //height: 4.29rem;
     width: 68px;
     height: 60px;
     margin: 1.29rem 0 0.86rem 0;
     background-image: url("../../images/logo-desktop.svg");
-    //text-indent: -9999px;
-    // position: relative;
     background-repeat: no-repeat;
-    // object-fit: cover;
-    // content: '';
     display: block;
     margin-right: auto;
-    // position: absolute;
-    // top: 0;
-    // z-index: 1;
 
     @include respond(tab-port) {
       margin: 2.9rem 0 1.7rem 0;
@@ -41,40 +22,28 @@
 
     @include respond(phone) {
       background-image: url("../../images/logo-mobile.svg");
-      //margin: 2.9rem 0 1.7rem 0;
       width: 56px;
       height: 49px;
     }
   }
-  // &--nav {
+
   &__nav {
-    //margin: 1.29rem 0rem 1.29rem 0rem;
     display: flex;
-    //align-content: space-between;
     align-items: center;
 
-    // &--list {
     &__list {
-      //margin-top: 2.57rem;
-      //margin-bottom: 2.71rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      // align-content: flex-end;
       width: 28.53rem;
-      //margin-right: auto;
 
       @include respond(tab-port) {
         display: none;
       }
-
-      // @include respond(phone) {
-        //display: none;
-      // }
     }
   }
 
-  &__add-btn{
+  &__add-btn {
     width: 54px;
     height: 54px;
     background-image: url('../../images/button-crear-gifo.svg');
@@ -83,58 +52,29 @@
     content: '';
     display: block;
 
-    &:hover{
+    &:hover {
       background-image: url('../../images/CTA-crear-gifo-hover.svg');
     }
 
-    &:active, &:focus{
+    &:active, &:focus {
       background-image: url('../../images/CTA-crear-gifo-active.svg');
     }
-
-    // &, &:link, &:visited {
-      // &--plus {
-      //   width: 3.86rem;
-      //   height: 3.86rem;
-      // }
-    // }
 
     @include respond(tab-port) {
       display: none;
     }
-
-    // @include respond(phone) {
-    //   display: none;
-    // }
-
-    // &--front {
-    //     display: flex;
-    //     justify-content: space-between;
-    // &, &:link, &:visited {
-    //      margin: 1.29rem 11.14rem 1.29rem 4.25rem;
-
-    //     //&--plus {
-    //         width: 3.86rem;
-    //         height: 3.86rem;
-        // }
-    // }
-  
   }
 
   @include respond(tab-port) {
     padding: 0 2.2rem;
   }
-
-  // @include respond(phone) {
-  //   padding: 0 2.2rem;
-  // }
 }
 
 //DARK MODE
 .dark {
   .header {
-  border-top: $color-black solid;
-    // &--line {
-    //     background-color: $color-black;
+    border-top: $color-black solid;
+
     &__logo {
       background-image: url('../../images/logo-modo-noc.svg');
 
@@ -142,24 +82,16 @@
         background-image: url("../../images/logo-mobile-modo-noct.svg");
       }
     }
-    &__add-btn{
+
+    &__add-btn {
       background-image: url('../../images/CTA-crear-gifo-modo-noc.svg');
 
-
-      &:hover{
-        // &::after{
-          background-image: url('../../images/CTA-crear-gifo-hover-modo-noc.svg');
-        // }
+      &:hover {
+        background-image: url('../../images/CTA-crear-gifo-hover-modo-noc.svg');
       }
 
-      // &::after {
-        // background-image: url('../../images/CTA-crear-gifo-hover-modo-noc.svg');
-      // }
-
       &:active, &:focus{
-        // &::after{
-            background-image: url('../../images/CTA-crear-gifo-active-modo-noc.svg');
-        // }
+        background-image: url('../../images/CTA-crear-gifo-active-modo-noc.svg');
       }
     }
   }
