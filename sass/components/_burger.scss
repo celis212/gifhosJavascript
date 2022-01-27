@@ -56,7 +56,7 @@
   
   &__check:checked + &__options {
     @include respond(tab-port) {
-      height: 48.4rem;
+      height: 100%;
       padding-top: 1.95rem;
     }
   }

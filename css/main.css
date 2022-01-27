@@ -257,7 +257,7 @@ body {
       display: block; } }
 @media (max-width: 56.25em) {
   .burger-menu__check:checked + .burger-menu__options {
-    height: 48.4rem;
+    height: 100%;
     padding-top: 1.95rem; } }
 @media (max-width: 56.25em) {
   .burger-menu__check:checked ~ .burger-menu__image .burger-menu__image__icon {
