@@ -1,23 +1,22 @@
 #nav-dark-mode,  #burger-dark-mode {
+  cursor: pointer;
   background: none;
   border: none;
-  padding: 0;
-  cursor: pointer;
   outline: inherit;
+  padding: 0;
 }
 
 .burger-menu {
-  &__options{
+  &__options {
     &__link {
-      width: 100%;
+      color: $color-white;
+      font-family: $font-bold;
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 3.0rem;
       list-style-type: none;
       text-decoration: none;
-            
-      font-family: $font-bold;
-      font-weight: 800;
-      font-size: 1.5rem;
-      line-height: 3.0rem;
-      color: $color-white;
+      width: 100%;
     }
   }
 }
@@ -29,13 +28,13 @@
 
       &-link {
         &, &:link, &:visited {
+          color: $color-font-primary;
+          font-family: $font-bold;
+          font-size: 0.93rem;
+          font-weight: 800;
+          line-height: 1.14rem;
           list-style-type: none;
           text-decoration: none;
-          font-family: $font-bold;
-          font-weight: 800;
-          font-size: 0.93rem;
-          line-height: 1.14rem;
-          color: $color-font-primary;
         }
 
         &:hover {
@@ -52,13 +51,75 @@
   }
 }
 
+.slider {
+  text-align: center;
+
+  &__title {
+    color: $color-font-primary;
+    font-family: $font-bold;
+    font-size: 1.79rem;
+    line-height: 2.14rem;
+
+    @include respond(tab-port) {
+      font-size: 1.67rem;
+      line-height: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-roboto;
+    font-size: 1.29rem;
+    line-height: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.33rem;
+      line-height: 1.92rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+    }
+  }
+
+  &__container {
+    &__trending {
+      &__value {
+        &__text {
+          text-align: left;
+
+          &__user {
+            color: $color-white;
+            font-family: $font-roboto;
+            font-size: 1.07rem;
+            line-height: 1.29rem;
+          }
+
+          &__title {
+            color: $color-white;
+            font-family: $font-bold;
+            font-size: 1.14rem;
+            line-height: 1.36rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
 .footer {
   &__share-text {
-    font-family: $font-roboto;
-    font-weight: 400;
-    font-size: 0.93rem;
-    line-height: 1.07rem;
     color: $color-black;
+    font-family: $font-roboto;
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.07rem;
 
     @include respond(tab-land) {
       font-size: 1.5rem;
@@ -68,8 +129,8 @@
 
   &__media {
     &__link {
-      text-decoration: none;
       font-size: 1.43rem;
+      text-decoration: none;
 
       &, &:link, &:visited {
         color: $color-social;
@@ -82,11 +143,11 @@
   }
 
   &__copyright {
-    font-family: $font-roboto;
-    font-weight: 400;
-    font-size: 0.93rem;
-    line-height: 1.07rem;
     color: $color-black;
+    font-family: $font-roboto;
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.07rem;
 
     @include respond(tab-land) {
       font-size: 1.2rem;
@@ -116,6 +177,14 @@
           }
         }
       }
+    }
+  }
+
+  .slider {
+    color: $color-white;
+
+    &__title {
+      color: $color-white;
     }
   }
     

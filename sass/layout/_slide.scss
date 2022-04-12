@@ -1,0 +1,169 @@
+.slider {
+  align-items: center;
+  background-color: $color-background-gray;
+  display: flex;
+  flex-direction: column;
+  padding: 4.79rem 6.57rem 13rem 6.57rem;
+
+  &__text {
+    margin-bottom: 3.79rem;
+    margin-top: 0.86rem;
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    &__back {
+      background-image: url('../../images/button-slider-left.svg');
+      background-repeat: no-repeat;
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        background-image: url('../../images/Button-slider-left-hover.svg');
+      }
+
+      @include respond(tab-port) {
+        background-image: none;
+      }
+    }
+
+    &__trending {
+      display: grid;
+      grid-template: 19.64rem / repeat(3, 25.5rem);
+      grid-gap: 0 1.93rem;
+      margin: 0 1.57rem;
+      overflow: hidden;
+
+      &__value {
+        background-color: $color-primary;
+        height: 19.64rem;
+        width: 25.5rem; 
+        position: relative;
+
+        &__gif { 
+          height: 19.64rem;
+          width: 25.5rem;  
+          position: absolute;
+          z-index: 10;
+          right: 0;
+          top: 0;
+
+          @include respond(tab-port) {
+            height: 18.7rem;
+            width: 22rem;  
+          }
+      
+          @include respond(phone) {
+            height: 18.7rem;
+            width: 24.3rem;  
+          }
+        }
+
+        &__buttons {
+          position: absolute;
+          right: 0.71rem;
+          top: 0.71rem;
+
+          &__fav--icon, &__dwl--icon, &__full--icon {
+            background-color: $color-white;
+            border-radius: 6px;
+            height: 2.29rem;
+            margin-right: 0.71rem;
+            opacity: 0.7;
+            width: 2.29rem;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &__fav--icon{
+            &::after {
+              background: url("../images/icon-fav-active.svg");
+            }
+          } 
+        }
+
+        &__text {
+          left: 1.29rem;
+          position: absolute;
+          top: 12.93rem;
+
+          &__user {
+            margin-bottom: 0.43rem;
+          }
+        }
+
+        &:hover{
+          opacity: 0.9;
+
+          .slider__container__trending__value__gif { 
+            opacity: 0.7;
+            z-index: -1;
+          }
+        }
+
+        @include respond(tab-port) {
+          height: 18.7rem;
+          width: 22rem;  
+        }
+    
+        @include respond(phone) {
+          height: 18.7rem;
+          width: 24.3rem;  
+        }
+      }
+    }
+
+    &__next {
+      background-image: url('../../images/Button-Slider-right.svg');
+      background-repeat: no-repeat;
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        background-image: url('../../images/Button-Slider-right-hover.svg');
+      }
+
+      @include respond(tab-port) {
+        background-image: none;
+      }
+    }
+  }
+}
+
+.dark {
+  .slider {
+    background-color: $color-background-dark-gray;
+
+    &__container {
+
+      &__back {
+        background-image: url('../../images/button-slider-left-md-noct.svg');
+
+        &:hover {
+          background-color: $color-white;
+        }
+
+        @include respond(tab-port) {
+          background-image: none;
+        }
+      }
+
+      &__next {
+        background-image: url('../../images/button-slider-right-md-noct.svg');
+
+        &:hover {
+          background-color: $color-white;
+        }
+
+        @include respond(tab-port) {
+          background-image: none;
+        }
+      }
+    }
+  }
+}

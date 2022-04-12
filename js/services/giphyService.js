@@ -1,13 +1,21 @@
-const getData = async () => {
+import customFetch from '../utils/customFetch.js';
+
+// Set the key for the search
+const APIKEY = 'VoyMtUR5a3aeKmGKj01JptIltKYBlN0D';
+
+
+// Set and get the infor from the API
+const initTrending = async () => {
+  let urlTrend = `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=50`;
   try {
-    const response = await fetch('https://api.giphy.com/v1/gifs/random?api_key=URBjBCAfMq3GZKD7prs8kP8UOLDoqW07&tag=&rating=g')
-      .then(res => res.json())
-      return response
-  } catch(error) {
+    const response = await customFetch(urlTrend);
+    const gifty = response.data.map(gif => ({url: gif.images.original.url, title: gif.title}));
+    return gifty;
+  } catch (error) {
     throw error;
   }
-};
+}
 
 export {
-  getData
+  initTrending
 }

@@ -5,25 +5,26 @@
   }
 
   &__options {
-    display: none;
     background-color: $color-primary;
-    overflow: hidden;
-    opacity: 90%;
-    width: 100%;
-    position: absolute;
-    top: 10.0rem;
-    padding-top: 0rem;
+    display: none;
     height: 0px;
-    text-align: center;
+    opacity: 90%;
+    overflow: hidden;
+    padding-top: 0rem;
+    position: absolute;
     transition: height 0.4s ease;
     transition: padding-top 0.4s ease;
+    text-align: center;
+    top: 10.0rem;
+    width: 100%;
 
     @include respond(tab-port) {
-        display: block;
+      display: block;
+      z-index: 20;
     }
 
     @include respond(phone) {
-        display: block;
+      display: block;
     }
 
     &__link {
@@ -43,13 +44,13 @@
       margin-right: 2.6rem;
 
       @include respond(tab-port) {
-        position: fixed;
-        right: 0;
         background-image: url('../../images/burger.svg');
         background-repeat: no-repeat;
-        width: 15px;
-        height: 14px;
         display: block;
+        height: 14px;
+        position: fixed;
+        right: 0;
+        width: 15px;
       }
     }
   }
@@ -69,11 +70,11 @@
 }
 
 hr {
-  width: 10%;
+  background-color: $color-white;
   height: 1px;
   margin-left: 50%;
   transform: translate(-50%);
-  background-color: $color-white;
+  width: 10%;
 }
 
 //DARK MODE
