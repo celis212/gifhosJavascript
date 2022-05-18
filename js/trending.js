@@ -51,7 +51,7 @@ async function showImgTrending() {
     let favoriteImage = document.createElement('img');//imgFavorite
     favoriteImage.setAttribute('id', `imgFavT${count}`);
     favoriteImage.src = "../images/icon-fav-hover.svg";
-    favoriteImage.setAttribute('onclick', 'addFavoritesTrending(this)');//revizar
+    favoriteImage.setAttribute('onclick', 'favoritesTrending(this)');//addFavoritesTrending
     favoriteImage.setAttribute('class', 'slider__container__trending__value__buttons__fav--icon');
 
     // Icon Hover: Download
@@ -103,6 +103,24 @@ function backTrendingGIF() {
   }
 }
 
+// Add Favorites
+var arrayFavorites = [];
+var arrFav = JSON.parse(localStorage.getItem("sendFavorites"));
+if (arrFav != null) {
+  arrayFavorites = arrFav;
+}
+
+async function favoritesTrending(iconFavorite) {
+  let idImgHtml = await iconFavorite.id;
+  console.log(idImgHtml);
+  let extractLastDigit = idImgHtml.slice(7, idImgHtml.length);
+  let tagGif = document.getElementById(`divGifT${extractLastDigit}`);
+  arrayFavorites.push(tagGif.src);
+  localStorage.setItem('sendFavorites', JSON.stringify(arrayFavorites));
+  location.reload();
+}
+
 export {
-  showImgTrending
+  showImgTrending,
+  favoritesTrending
 }

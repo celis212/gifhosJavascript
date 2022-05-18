@@ -16,59 +16,184 @@
 </head>
 
 <body>
-  <div class="burger-menu">
-    <input type="checkbox" class="burger-menu__check" id="menu-toggle">
-    <ul class="burger-menu__options">
-      <li class="burger-menu__options__link" id="burger-dark-mode">MODO NOCTURNO</li><hr>
-      <li class="burger-menu__options__link" id="">FAVORITOS</li><hr>
-      <li class="burger-menu__options__link" id="">MIS GUIFOS</li>
-    </ul>
-    <label for="menu-toggle" class="burger-menu__image">
-      <span 
-        class="burger-menu__image__icon"
-        role="img" 
-        arial-label="open close burger menu" 
-        title="burger menu"
-        ></span>
-    </label>
-  </div>
-  <header class="header">
-    <a class="header__logo-box" href="#home">
-      <span 
-        class="header__logo" 
-        role="img" 
-        arial-label="go home" 
-        title="gifos logo"
-      ></span>
-    </a>
-    <nav class="header__nav">
-      <ul class="header__nav__list">
-        <li class="header__nav__list-link" id="nav-dark-mode">MODO NOCTURNO</li>
-        <li class="header__nav__list-link" id="">FAVORITOS</li>
-        <li class="header__nav__list-link" id="">MIS GUIFOS</li>
+  <div id="home">
+    <div class="burger-menu">
+      <input type="checkbox" class="burger-menu__check" id="menu-toggle">
+      <ul class="burger-menu__options">
+        <li class="burger-menu__options__link" id="burger-dark-mode">MODO NOCTURNO</li><hr>
+        <li class="burger-menu__options__link" id="">FAVORITOS</li><hr>
+        <li class="burger-menu__options__link" id="">MIS GUIFOS</li>
       </ul>
-    </nav>
-    <a class="header__add-btn" href="#">
+      <label for="menu-toggle" class="burger-menu__image">
+        <span 
+          class="burger-menu__image__icon"
+          role="img" 
+          arial-label="open close burger menu" 
+          title="burger menu"
+          ></span>
+      </label>
+    </div>
+    <header class="header">
+      <a class="header__logo-box" href="#home">
+        <span 
+          class="header__logo" 
+          role="img" 
+          arial-label="go home" 
+          title="gifos logo"
+        ></span>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list-link" id="nav-dark-mode">MODO NOCTURNO</li>
+          <li class="header__nav__list-link" id="">FAVORITOS</li>
+          <li class="header__nav__list-link" id="">MIS GUIFOS</li>
+        </ul>
+      </nav>
+      <a class="header__add-btn" href="#">
+        <span 
+          role="img" 
+          arial-label="generator of gif" 
+          title="gif button"
+        ></span>
+      </a>
+    </header>
+    <main class="search">
+      <h1 class="search__title">Inspírate, busca, guarda, y crea <br>los mejores <span class="search__title--special">GIFOS</span></h1>
+      <div class="search__gif">
+        <img class="search__gif__img" src="../images/ilustra_header.svg">
+        <div class="search__gif__bar">
+          <input class="search__gif__bar__input" type="text" placeholder="Busca GIFOS y más">
+          <button class="search__gif__bar__button-search">
+            <span 
+              role="img" 
+              arial-label="search button" 
+              title="gif searching button"
+            ></span>
+          </button>
+          <button class="search__gif__bar__button-close">
+            <span 
+              role="img" 
+              arial-label="search close button" 
+              title="gif searching close button"
+            ></span>
+          </button>
+        </div>
+        <div class="search__gif__trends">
+          <h2 class="search__gif__trends__title">Trending:</h2>
+          <p class="search__gif__trends__most-wanted"></p>
+        </div> 
+      </div>
+    </main>
+    <section class="slider">
+      <h2 class="slider__title">Trending GIFOS</h2>
+      <p class="slider__text">Mira los últimos GIFO de nuestra comunidad.</p>
+      <div class="slider__container">
+        <a class="slider__container__back" id='btnBack'>
+          <span 
+            role="img" 
+            arial-label="arrow back button" 
+            title="arrow button"
+          ></span>
+        </a>
+        <div class="slider__container__trending" id="sectionTrending">
+          <div class="slider__container__trending__value" id="gif-1">
+            <img class="slider__container__trending__value__gif">
+            <div class="slider__container__trending__value__buttons">
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__fav--icon" alt="favourite button">
+              </button>              
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__dwl--icon" alt="download button" src="../images/icon-download.svg">
+              </button>
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__full--icon" alt="full size button" src="../images/icon-max-normal.svg">
+              </button>
+            </div>
+            <div class="slider__container__trending__value__text">
+              <p class="slider__container__trending__value__text__user">User</p>
+              <p class="slider__container__trending__value__text__title"></p>
+            </div>
+          </div>          
+          <div class="slider__container__trending__value" id="gif-2">
+            <img class="slider__container__trending__value__gif">
+            <div class="slider__container__trending__value__buttons">
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__fav--icon" alt="favourite button">
+              </button>              
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__dwl--icon" alt="download button" src="../images/icon-download.svg">
+              </button>
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__full--icon" alt="full size button" src="../images/icon-max-normal.svg">
+              </button>
+            </div>
+            <div class="slider__container__trending__value__text">
+              <p class="slider__container__trending__value__text__user">User</p>
+              <p class="slider__container__trending__value__text__title"></p>
+            </div>
+          </div>  
+          <div class="slider__container__trending__value" id="gif-3">
+            <img class="slider__container__trending__value__gif">
+            <div class="slider__container__trending__value__buttons">
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__fav--icon" alt="favourite button">
+              </button>              
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__dwl--icon" alt="download button" src="../images/icon-download.svg">
+              </button>
+              <button class="slider__container__trending__value__buttons__icon">
+                <img class="slider__container__trending__value__buttons__full--icon" alt="full size button" src="../images/icon-max-normal.svg">
+              </button>
+            </div>
+            <div class="slider__container__trending__value__text">
+              <p class="slider__container__trending__value__text__user">User</p>
+              <p class="slider__container__trending__value__text__title"></p>
+            </div>
+          </div> 
+        </div>
+        <a class = "slider__container__next" id='btnNext'> 
+          <span 
+            role="img" 
+            arial-label="arrow next button" 
+            title="arrow button"
+          ></span>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__share-text">Compartir en:</p>
+      <ul class="footer__media">
+        <li>
+          <a class="fab fa-facebook footer__media__link" href="#bottom" arial-label="facebook profile" ></a>
+        </li>
+        <li>
+          <a class="fab fa-twitter footer__media__link" href="#bottom" arial-label="twitter profile"></a>
+        </li>
+        <li>
+          <a class="fab fa-instagram footer__media__link" href="#bottom" arial-label="instagram profile"></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+  </div>
+  <div id="full-size" class="hidden">
+    <a class="full-size__close" id='closeFullView'>
       <span 
         role="img" 
-        arial-label="generator of gif" 
-        title="gif button"
+        arial-label="close full size view" 
+        title="close button"
       ></span>
     </a>
-  </header>
-  <section class="slider">
-    <h2 class="slider__title">Trending GIFOS</h2>
-    <p class="slider__text">Mira los últimos GIFO de nuestra comunidad.</p>
-    <div class="slider__container">
-      <a class="slider__container__back" id='btnBack'>
+    <div class="full-size__slider">
+      <a class="full-size__slider__back" id='btnBack'>
         <span 
           role="img" 
           arial-label="arrow back button" 
           title="arrow button"
         ></span>
       </a>
-      <div class="slider__container__trending" id="sectionTrending"></div>
-      <a class = "slider__container__next" id='btnNext'> 
+      <img class="full-size__slider__gif">
+      <a class="full-size__slider__next" id='btnNext'> 
         <span 
           role="img" 
           arial-label="arrow next button" 
@@ -76,22 +201,22 @@
         ></span>
       </a>
     </div>
-  </section>
-  <footer class="footer">
-    <p class="footer__share-text">Compartir en:</p>
-    <ul class="footer__media">
-      <li>
-        <a class="fab fa-facebook footer__media__link" href="#bottom" arial-label="facebook profile" ></a>
-      </li>
-      <li>
-        <a class="fab fa-twitter footer__media__link" href="#bottom" arial-label="twitter profile"></a>
-      </li>
-      <li>
-        <a class="fab fa-instagram footer__media__link" href="#bottom" arial-label="instagram profile"></a>
-      </li>
-    </ul>
-    <p class="footer__copyright">© GIFOS 2020 All Rights Reserved.</p>
-  </footer>
+    <div class="full-size__description">
+      <div class="full-size__description__text">
+        <p class="full-size__description__text__user">User</p>
+        <p class="full-size__description__text__title"></p>
+      </div>
+      <div class="full-size__description__buttons">
+        <button class="full-size__description__buttons__icon">
+          <img class="full-size__description__buttons__fav--icon" alt="favourite button">
+        </button>              
+        <button class="full-size__description__buttons__icon">
+          <img class="full-size__description__buttons__dwl--icon" alt="download button" src="../images/icon-download.svg">
+        </button>
+      </div>
+    </div>
+  </div>
+  
   <script src="../js/main.js" type="module"></script>
 </body>
 

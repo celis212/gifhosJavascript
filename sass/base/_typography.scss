@@ -51,6 +51,46 @@
   }
 }
 
+.search {
+  &__title {
+    color: $color-font-primary;
+    font-family: $font-bold;
+    font-size: 2.5rem;
+    line-height: 3.57rem;
+
+    &--special{
+      color: $color-text-hover;
+    }
+  }
+
+  &__gif {
+    &__bar {
+      &__input {
+        color: $color-text-active;
+        font-family: $font-roboto;
+        font-size: 1.14rem;
+        font-size: 1.36rem;
+      }
+    }
+    
+    &__trends {
+      &__title {
+        color: $color-font-primary;
+        font-family: $font-bold;
+        font-size: 1.29rem;
+        line-height: 1.79rem;
+      }
+
+      &__most-wanted {
+        color: $color-font-primary;
+        font-family: $font-monserat;
+        font-size: 1.14rem;
+        line-height: 1.79rem;
+      }
+    }
+  }
+}
+
 .slider {
   text-align: center;
 

@@ -61,6 +61,29 @@ body {
     color: #9CAFC3;
     text-decoration: none; }
 
+.search__title {
+  color: #572EE5;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  line-height: 3.57rem; }
+  .search__title--special {
+    color: #5ED7C6; }
+.search__gif__bar__input {
+  color: #9CAFC3;
+  font-family: Roboto;
+  font-size: 1.14rem;
+  font-size: 1.36rem; }
+.search__gif__trends__title {
+  color: #572EE5;
+  font-family: Montserrat;
+  font-size: 1.29rem;
+  line-height: 1.79rem; }
+.search__gif__trends__most-wanted {
+  color: #572EE5;
+  font-family: Montserrat;
+  font-size: 1.14rem;
+  line-height: 1.79rem; }
+
 .slider {
   text-align: center; }
   .slider__title {
@@ -370,6 +393,60 @@ body {
     @media (max-width: 56.25em) {
       .dark .slider__container__next {
         background-image: none; } }
+
+.search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5.43rem 18.07rem 6.79rem 18.07rem; }
+  .search__title {
+    text-align: center; }
+  .search__gif {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    .search__gif__img {
+      height: 13.57rem;
+      margin-top: 1.71rem;
+      width: 28.5rem; }
+    .search__gif__bar {
+      align-items: center;
+      border: 1px solid #572EE5;
+      border-radius: 27px;
+      display: flex;
+      height: 3.57rem;
+      justify-content: space-between;
+      position: relative;
+      width: 39.38rem; }
+      .search__gif__bar__input {
+        background: none;
+        border: none;
+        outline: inherit;
+        margin-left: 3.86rem; }
+      .search__gif__bar__button-search {
+        background: none;
+        background-image: url("../../images/icon-search.svg");
+        background-repeat: no-repeat;
+        height: 1.43rem;
+        position: absolute;
+        right: 1.43rem;
+        width: 1.43rem; }
+      .search__gif__bar__button-close {
+        background: none;
+        background-image: url("../../images/close.svg");
+        background-repeat: no-repeat;
+        display: none;
+        height: 1.43rem;
+        position: absolute;
+        right: 1.43rem;
+        width: 1.43rem; }
+    .search__gif__trends {
+      margin-top: 5.21rem; }
+
+.dark .search__gif__bar__button-search {
+  background-image: url("../../images/icon-search-mod-noc.svg"); }
+.dark .search__gif__bar__button-close {
+  background-image: url("../../images/close-modo-noct.svg"); }
 
 .burger-menu__check {
   display: none; }
