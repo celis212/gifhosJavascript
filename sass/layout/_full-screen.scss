@@ -1,0 +1,51 @@
+#full-size {
+  display: flex;
+  flex-direction: column;
+  margin: 4.74rem 23.21rem 0 20.71rem;
+
+  .full-size__close {
+    background-image: url("../../images/close.svg");
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    height: 1.09rem;
+    width: 1.09rem;
+  }
+
+  .full-size__slider {
+    display: flex;
+    flex-direction: row;
+    margin: 5.6rem 0 0 0;
+    justify-content: center;
+
+    &__gif{
+      margin: 0 1.79rem;
+    }
+  }
+
+  .full-size__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.57rem 0 0 0;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.dark {
+  #full-size {
+    .full-size__close {
+      background-image: url("../../images/close-modo-noct.svg");
+    }
+  }
+
+}
+

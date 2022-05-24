@@ -60,33 +60,16 @@
     
     &__trends {
       margin-top: 5.21rem;
-
-      &__title {
-
-      }
-
-      &__most-wanted {
-
-      }
     }
   }
 }
 
 .dark{
   .search {
-    &__title {
-  
-    }
   
     &__gif {
-      &__img {
-  
-      }
   
       &__bar {
-        &__input {
-          
-        }
   
         &__button-search {
           background-image: url('../../images/icon-search-mod-noc.svg');
@@ -94,15 +77,6 @@
   
         &__button-close {
           background-image: url('../../images/close-modo-noct.svg');
-        }
-      }
-      
-      &__trends {
-        &__title {
-  
-        }
-        &__most-wanted {
-  
         }
       }
     }

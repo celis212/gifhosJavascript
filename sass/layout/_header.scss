@@ -8,13 +8,13 @@
   }
 
   &__logo{
-    width: 68px;
-    height: 60px;
-    margin: 1.29rem 0 0.86rem 0;
     background-image: url("../../images/logo-desktop.svg");
     background-repeat: no-repeat;
     display: block;
     margin-right: auto;
+    margin: 1.29rem 0 0.86rem 0;
+    height: 60px;
+    width: 68px;
 
     @include respond(tab-port) {
       margin: 2.9rem 0 1.7rem 0;
@@ -22,14 +22,14 @@
 
     @include respond(phone) {
       background-image: url("../../images/logo-mobile.svg");
-      width: 56px;
       height: 49px;
+      width: 56px;
     }
   }
 
   &__nav {
-    display: flex;
     align-items: center;
+    display: flex;
 
     &__list {
       display: flex;

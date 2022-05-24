@@ -9,7 +9,7 @@ const initTrending = async () => {
   let urlTrend = `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=50`;
   try {
     const response = await customFetch(urlTrend);
-    const gifty = response.data.map(gif => ({url: gif.images.original.url, title: gif.title}));
+    const gifty = response.data.map(gif => ({url: gif.images.original.url, title: gif.title, id: gif.id}));
     return gifty;
   } catch (error) {
     throw error;

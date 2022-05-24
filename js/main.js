@@ -1,11 +1,10 @@
-import {showImgTrending, favoritesTrending} from './trending.js';
-import displayTemme from './displayTemme.js';
+import {showImgTrending} from './views/trendingView.js';
+import darkMode from './darkMode.js';
 
 // Set Dark Mode
 async function App () {
   showImgTrending();
-  displayTemme()
-  favoritesTrending();
+  darkMode()
 }
 
 App();
