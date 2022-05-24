@@ -1,4 +1,4 @@
-import { getDataLocalStorage, SetDataLocalStorage } from "./localStorage.js";
+import {getDataLocalStorage, SetDataLocalStorage} from "./localStorage.js";
 
 const arrayFavorites = getDataLocalStorage('sendFavorites') ?? [];
 
