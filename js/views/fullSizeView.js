@@ -1,5 +1,7 @@
 import {handleClickFavourite, favouritePosition} from '../utils/favourites.js';
 
+let pos 
+
 function fullSizeView (url, id, title, position,  listOfGifs) {
   // Hide the home view
   let home = document.querySelector('#home');
@@ -27,51 +29,51 @@ function fullSizeView (url, id, title, position,  listOfGifs) {
   // Icon: Favorite 
   const favoritefullImage = document.querySelector(`#full-size .full-size__description__buttons__fav--icon`);//imgFavorite
   favoritefullImage.src = favouritePosition(id) >= 0 ? "../images/icon-fav-active.svg" : "../images/icon-fav-hover.svg";
-  favoritefullImage.addEventListener('click', () => handleClickFavourite(favoritefullImage, id));
-
-  // Container Image - Arrows: Back 
-  let btnBack = document.querySelector('#full-size #btnBack');
-  btnBack.addEventListener('click', () => {
-    position--;
-    if (position >= 0) {
-      imgFullScreen.src = listOfGifs[position]['url'];
-      pTitle.innerText  = listOfGifs[position]['title'];
-    } else {
-      position = 49;
-      imgFullScreen.src = listOfGifs[position]['url'];
-      pTitle.innerText  = listOfGifs[position]['title'];
-    }
-  });
-
-  // Container Image - Arrows: Next
-  let btnNext = document.querySelector('#full-size #btnNext');
-  btnNext.addEventListener('click', () => {
-    position++;
-    if (position <= 49) {
-      imgFullScreen.src = listOfGifs[position]['url'];
-      pTitle.innerText  = listOfGifs[position]['title'];
-    } else {
-      position = 0;
-      imgFullScreen.src = listOfGifs[position]['url'];
-      pTitle.innerText  = listOfGifs[position]['title'];
-    }
-  });
-
-  // Icon Favorite 
-  let imgFavorite = document.createElement('img');
-  imgFavorite.src = "../images/icon-fav-hover.svg";
-  imgFavorite.setAttribute('class', 'icon imgFavorite');
-  imgFavorite.addEventListener('click', () => {
-    favoriteImage.src = "../images/icon-fav-active.svg";
-    arrayFavorites.push(showTrending[count]['url']);
-    localStorage.setItem('sendFavorites', JSON.stringify(arrayFavorites));
-  });   
+  favoritefullImage.setAttribute('data-id', id);
+  favoritefullImage.addEventListener('click', handleClickFavourite);
 }
 
+// Container Image - Arrows: Back 
+let btnBack = document.querySelector('#full-size #btnBack');
+btnBack.addEventListener('click', () => {
+  position--;
+  if (position >= 0) {
+    imgFullScreen.src = listOfGifs[position]['url'];
+    pTitle.innerText  = listOfGifs[position]['title'];
+  } else {
+    position = 49;
+    imgFullScreen.src = listOfGifs[position]['url'];
+    pTitle.innerText  = listOfGifs[position]['title'];
+  }
+});
+
+// Container Image - Arrows: Next
+let btnNext = document.querySelector('#full-size #btnNext');
+btnNext.addEventListener('click', () => {
+  position++;
+  if (position <= 49) {
+    imgFullScreen.src = listOfGifs[position]['url'];
+    pTitle.innerText  = listOfGifs[position]['title'];
+  } else {
+    position = 0;
+    imgFullScreen.src = listOfGifs[position]['url'];
+    pTitle.innerText  = listOfGifs[position]['title'];
+  }
+});
 
 
 
 
+
+  // Icon Favorite 
+  // let imgFavorite = document.createElement('img');
+  // imgFavorite.src = "../images/icon-fav-hover.svg";
+  // imgFavorite.setAttribute('class', 'icon imgFavorite');
+  // imgFavorite.addEventListener('click', () => {
+  //   favoriteImage.src = "../images/icon-fav-active.svg";
+  //   arrayFavorites.push(showTrending[count]['url']);
+  //   localStorage.setItem('sendFavorites', JSON.stringify(arrayFavorites));
+  // });   
 
 
 // // Set the container of the full Screen btnBack, btnNext, imgFullScreen
