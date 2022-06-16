@@ -1,9 +1,9 @@
-import {handleClickFavourite, favouritePosition} from '../utils/favourites.js';
+import { handleClickFavourite, favouritePosition } from '../utils/favourites.js';
+import { getDataLocalStorage } from '../utils/localStorage.js';
 
-let pos 
-
-function fullSizeView (url, id, title, position,  listOfGifs) {
+function fullSizeView (position) {
   // Hide the home view
+  console.log(position);
   let home = document.querySelector('#home');
   home.classList.toggle('hidden');
 
@@ -18,48 +18,49 @@ function fullSizeView (url, id, title, position,  listOfGifs) {
     fullSize.classList.toggle('hidden');
   });
 
+  const showTrending = getDataLocalStorage('trendingList')
+
   // Title
   let pTitle = document.querySelector('#full-size .full-size__description__text__title');
-  pTitle.innerText = title;
+  pTitle.innerText = showTrending[position].title;
 
   // Set Img Full Screen  
   let imgFullScreen = document.querySelector('#full-size .full-size__slider__gif');
-  imgFullScreen.src = url;
+  imgFullScreen.src = showTrending[position].url;
 
   // Icon: Favorite 
   const favoritefullImage = document.querySelector(`#full-size .full-size__description__buttons__fav--icon`);//imgFavorite
-  favoritefullImage.src = favouritePosition(id) >= 0 ? "../images/icon-fav-active.svg" : "../images/icon-fav-hover.svg";
-  favoritefullImage.setAttribute('data-id', id);
+  favoritefullImage.src = favouritePosition(showTrending[position].id) >= 0 ? "../images/icon-fav-active.svg" : "../images/icon-fav-hover.svg";
+  favoritefullImage.setAttribute('data-id', showTrending[position].id);
   favoritefullImage.addEventListener('click', handleClickFavourite);
+
+  // Container Image - Arrows: Back 
+  // sacar las arrow de aca y ponerlas en un archivo diferente 
+  // aca enviaremos el position lo modificamos y lo enviamos de nuevo al fullsize 
+  // debemos de separar el que permite la visualizacion del fullsize y el que cambia de gifo dentro de este fullsize
+  let btnBack = document.querySelector('#full-size #btnBack');
+  btnBack.addEventListener('click', () => {
+    position --;
+    if (position < 0) {
+      position = 49;
+    }
+    fullSizeView(position);
+  });
+
+  // Container Image - Arrows: Next
+  let btnNext = document.querySelector('#full-size #btnNext');
+  btnNext.addEventListener('click', () => {
+    position ++;
+    if (position > 49) {
+      position = 0;
+    }
+    fullSizeView(position);
+  });
 }
 
-// Container Image - Arrows: Back 
-let btnBack = document.querySelector('#full-size #btnBack');
-btnBack.addEventListener('click', () => {
-  position--;
-  if (position >= 0) {
-    imgFullScreen.src = listOfGifs[position]['url'];
-    pTitle.innerText  = listOfGifs[position]['title'];
-  } else {
-    position = 49;
-    imgFullScreen.src = listOfGifs[position]['url'];
-    pTitle.innerText  = listOfGifs[position]['title'];
-  }
-});
 
-// Container Image - Arrows: Next
-let btnNext = document.querySelector('#full-size #btnNext');
-btnNext.addEventListener('click', () => {
-  position++;
-  if (position <= 49) {
-    imgFullScreen.src = listOfGifs[position]['url'];
-    pTitle.innerText  = listOfGifs[position]['title'];
-  } else {
-    position = 0;
-    imgFullScreen.src = listOfGifs[position]['url'];
-    pTitle.innerText  = listOfGifs[position]['title'];
-  }
-});
+
+
 
 
 

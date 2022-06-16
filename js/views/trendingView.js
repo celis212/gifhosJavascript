@@ -1,22 +1,18 @@
-import {initTrending}                             from '../services/giphyService.js';
-import {handleClickFavourite, favouritePosition}  from '../utils/favourites.js';
-import {downloadImage}                            from '../utils/download.js';
-import {fullSizeView}                             from '../views/fullSizeView.js';
-
-// Set the amount of image per page
-let countStartTrend = 0;
-
-// Set the target element to show the image
-let showSlider = document.querySelector('#sectionTrending');
-
-// Get the info from giphyService and cut on three parts of the array
-const showTrending = await initTrending();
-console.log(showTrending);
+import { handleClickFavourite, favouritePosition }  from '../utils/favourites.js';
+import { downloadImage }                            from '../utils/download.js';
+import { fullSizeView }                             from '../views/fullSizeView.js';
+import { getDataLocalStorage }                      from '../utils/localStorage.js';
+import { btnNextTrending, btnBackTrending }         from '../utils/arrowsButtons.js';
 
 // Set the visualization of the GIF image
-async function showImgTrending() {
+async function showImgTrending(countStart = 0) {
+  // Set the amount of image per page
+  let startTrend = parseInt(countStart);
   
-  let showthreeTrending = showTrending.slice(countStartTrend, countStartTrend + 3);
+  // Get the info from giphyService and cut on three parts of the array
+  const showTrending = getDataLocalStorage('trendingList')
+
+  let showthreeTrending = showTrending.slice(startTrend, startTrend + 3);
   // Set the counter variable
   let countGif = 0;
 
@@ -47,30 +43,20 @@ async function showImgTrending() {
 
     // Icon: Full Size
     let fullSize = document.querySelector(`#gif-${countGif} .slider__container__trending__value__buttons__full--icon`);//imgFullSize
-    fullSize.parentElement.addEventListener('click', () => fullSizeView(gifInfo.url, gifInfo.id, gifInfo.title, countStartTrend, showTrending));
+    fullSize.parentElement.addEventListener('click', () => fullSizeView(startTrend+countGif-1));
   });
+
+  // Next button
+  let btnNext = document.querySelector("a#btnNext");
+  btnNext.setAttribute('data-count', 3);
+  btnNext.setAttribute('data-number', startTrend);
+  btnNext.addEventListener('click', btnNextTrending);
+
+  // Back button
+  let btnBack = document.querySelector("a#btnBack");
+  btnBack.setAttribute('data-count', 3);
+  btnBack.setAttribute('data-number', startTrend);
+  btnBack.addEventListener('click', btnBackTrending);
 }
 
-// Set the next button trending
-document.querySelector("a#btnNext").addEventListener('click', async () => {
-  if (countStartTrend < 47) {
-    countStartTrend++;
-  } else {
-    countStartTrend = 0;
-  }
-
-  showImgTrending();
-});
-
-// Set the back button trending
-document.querySelector("a#btnBack").addEventListener('click', async () => {
-  if (countStartTrend === 0) {
-    countStartTrend = 47;
-  } else {
-    countStartTrend--;
-  }
-
-  showImgTrending();
-});
-
-export {showImgTrending};
+export { showImgTrending };

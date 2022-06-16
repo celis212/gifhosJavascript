@@ -1,4 +1,5 @@
-import customFetch from '../utils/customFetch.js';
+import customFetch          from '../utils/customFetch.js';
+import { SetDataLocalStorage }  from '../utils/localStorage.js';
 
 // Set the key for the search
 const APIKEY = 'VoyMtUR5a3aeKmGKj01JptIltKYBlN0D';
@@ -9,11 +10,10 @@ const initTrending = async () => {
   try {
     const response = await customFetch(urlTrend);
     const gifty = response.data.map(gif => ({url: gif.images.original.url, title: gif.title, id: gif.id}));
-    // SetDataLocalStorage('trendingList', gifty);
-    return gifty;
+    SetDataLocalStorage('trendingList', gifty);
   } catch (error) {
     throw error;
   }
 }
 
-export {initTrending};
+export { initTrending };

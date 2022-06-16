@@ -14,6 +14,4 @@ async function downloadImage (e) {
   a.click();
 }
 
-export {
-  downloadImage
-}
+export {downloadImage};
