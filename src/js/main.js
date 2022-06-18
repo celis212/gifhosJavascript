@@ -1,6 +1,6 @@
-import showImgTrending from "./views/trendingViewByThree.js";
 import darkMode from "./darkMode.js";
 import initTrending from "./services/giphyService.js";
+import showImgTrending from "./views/trendingViewByThree.js";
 
 // Set Dark Mode
 async function App() {
