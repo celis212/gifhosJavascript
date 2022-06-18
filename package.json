@@ -1,0 +1,25 @@
+{
+  "name": "project_two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"js/**/*.js\"",
+    "sass": "sass --watch src/sass/main.scss src/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celis212/project_two.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celis212/project_two/issues"
+  },
+  "homepage": "https://github.com/celis212/project_two#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.52.3"
+  }
+}
