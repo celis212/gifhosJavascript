@@ -1,0 +1,103 @@
+.burger-menu {
+  &__check {
+    display: none;
+  }
+
+  &__options {
+    background-color: $color-primary;
+    display: none;
+    height: 0px;
+    opacity: 90%;
+    overflow: hidden;
+    padding-top: 0rem;
+    position: absolute;
+    transition: height 0.4s ease;
+    transition: padding-top 0.4s ease;
+    text-align: center;
+    top: 10.0rem;
+    width: 100%;
+
+    @include respond(tab-port) {
+      display: block;
+      z-index: 20;
+    }
+
+    @include respond(phone) {
+      display: block;
+    }
+
+    &__link {
+      margin: 1.25rem 0;
+
+      &, &:link, &:visited {
+        display: block;
+      }
+    }
+  }
+  
+  &__image {
+    &__icon {
+      cursor: pointer;
+      display: none;
+      margin-top: 4.5rem;
+      margin-right: 2.6rem;
+
+      @include respond(tab-port) {
+        background-image: url('../images/burger.svg');
+        background-repeat: no-repeat;
+        display: block;
+        height: 14px;
+        position: fixed;
+        right: 0;
+        width: 15px;
+      }
+    }
+  }
+  
+  &__check:checked + &__options {
+    @include respond(tab-port) {
+      height: 100%;
+      padding-top: 1.95rem;
+    }
+  }
+
+  &__check:checked ~ &__image &__image__icon{
+    @include respond(tab-port) {
+      background-image: url('../images/close.svg');
+    }
+  }
+}
+
+hr {
+  background-color: $color-white;
+  height: 1px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 10%;
+}
+
+//DARK MODE
+.dark {
+  .burger-menu {
+    &__options {
+      @include respond(tab-port) {
+        background-color: $color-black;
+        opacity: 100%;
+      }
+    }
+
+    &__image {
+      &__icon {
+        @include respond(tab-port) {
+          background-image: url('../images/burger-modo-noct.svg');
+        }
+      }
+    }
+
+    &__check:checked ~ .burger-menu__image .burger-menu__image__icon {
+      @include respond(tab-port) {
+        background-image: url('../images/close-modo-noct.svg');
+      }
+    }
+  } 
+}

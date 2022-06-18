@@ -1,0 +1,38 @@
+// NORMALIZERS
+*, *::after, *::before {
+  border: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 87.5%; // 1rem = 14px
+
+  
+  @include respond(tab-land) {
+    font-size: 75%; // 1rem = 12px
+  }
+  
+  @include respond(tab-port) {
+    font-size: 75%; // 1rem = 12px
+  }
+  
+  @include respond(phone) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 100%; // 1rem = 16px
+  }
+}
+  
+body {
+  box-sizing: border-box;  
+}
+
+.dark {
+  background-color: $color-dark-mode;
+}

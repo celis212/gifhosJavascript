@@ -1,0 +1,44 @@
+#btnBack {
+  background-image: url('../images/button-slider-left.svg');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+
+  &:hover {
+    background-image: url('../images/Button-slider-left-hover.svg');
+  }
+}
+
+#btnNext {
+  background-image: url('../images/Button-slider-right.svg');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+
+  &:hover {
+    background-image: url('../images/Button-slider-right-hover.svg');
+  }
+}
+
+.dark {
+  #btnBack {
+    background-image: url('../images/button-slider-left-md-noct.svg');
+
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+
+  #btnNext {
+    background-image: url('../images/button-slider-right-md-noct.svg');
+
+    &:hover {
+      background-color: $color-white;
+    }
+
+    @include respond(tab-port) {
+      background-image: none;
+    }
+  }
+}
+  

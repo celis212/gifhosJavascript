@@ -1,0 +1,275 @@
+#nav-dark-mode,  #burger-dark-mode {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: inherit;
+  padding: 0;
+}
+
+#home {
+  .burger-menu {
+    &__options {
+      &__link {
+        color: $color-white;
+        font-family: $font-bold;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 3.0rem;
+        list-style-type: none;
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .header {
+    &__nav {
+      &__list {
+        list-style: none;
+
+        &-link {
+          &, &:link, &:visited {
+            color: $color-font-primary;
+            font-family: $font-bold;
+            font-size: 0.93rem;
+            font-weight: 800;
+            line-height: 1.14rem;
+            list-style-type: none;
+            text-decoration: none;
+          }
+
+          &:hover {
+            text-decoration: underline solid $color-text-hover 1px;
+            text-underline-offset: 1.5px;
+          }
+
+          &:active {
+            color: $color-text-active;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .search {
+    &__title {
+      color: $color-font-primary;
+      font-family: $font-bold;
+      font-size: 2.5rem;
+      line-height: 3.57rem;
+
+      &--special{
+        color: $color-text-hover;
+      }
+    }
+
+    &__gif {
+      &__bar {
+        &__input {
+          color: $color-text-active;
+          font-family: $font-roboto;
+          font-size: 1.14rem;
+          font-size: 1.36rem;
+        }
+      }
+      
+      &__trends {
+        &__title {
+          color: $color-font-primary;
+          font-family: $font-bold;
+          font-size: 1.29rem;
+          line-height: 1.79rem;
+        }
+
+        &__most-wanted {
+          color: $color-font-primary;
+          font-family: $font-monserat;
+          font-size: 1.14rem;
+          line-height: 1.79rem;
+        }
+      }
+    }
+  }
+
+  .slider {
+    text-align: center;
+
+    &__title {
+      color: $color-font-primary;
+      font-family: $font-bold;
+      font-size: 1.79rem;
+      line-height: 2.14rem;
+
+      @include respond(tab-port) {
+        font-size: 1.67rem;
+        line-height: 2.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+
+    &__text {
+      font-family: $font-roboto;
+      font-size: 1.29rem;
+      line-height: 1.5rem;
+
+      @include respond(tab-port) {
+        font-size: 1.33rem;
+        line-height: 1.92rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+      }
+    }
+
+    &__container {
+      &__trending {
+        &__value {
+          &__text {
+            text-align: left;
+
+            &__user {
+              color: $color-white;
+              font-family: $font-roboto;
+              font-size: 1.07rem;
+              line-height: 1.29rem;
+            }
+
+            &__title {
+              color: $color-white;
+              font-family: $font-bold;
+              font-size: 1.14rem;
+              line-height: 1.36rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__share-text {
+      color: $color-black;
+      font-family: $font-roboto;
+      font-size: 0.93rem;
+      font-weight: 400;
+      line-height: 1.07rem;
+
+      @include respond(tab-land) {
+        font-size: 1.5rem;
+        line-height: 1.8rem;   
+      }
+    }
+
+    &__media {
+      &__link {
+        font-size: 1.43rem;
+        text-decoration: none;
+
+        &, &:link, &:visited {
+          color: $color-social;
+        }
+            
+        &:hover, &:active {
+          color: $color-font-primary;
+        }
+      }
+    }
+
+    &__copyright {
+      color: $color-black;
+      font-family: $font-roboto;
+      font-size: 0.93rem;
+      font-weight: 400;
+      line-height: 1.07rem;
+
+      @include respond(tab-land) {
+        font-size: 1.2rem;
+        line-height: 2rem;   
+      }
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+        line-height: 2rem;   
+      }
+    }
+  }
+}
+
+#full-size {
+  &__description{
+    &__text {
+      &__user {
+        color: $color-black;
+        font-family: $font-roboto;
+        font-size: 1.07rem;
+        line-height: 1.29rem;
+      }
+
+      &__title {
+        color: $color-black;
+        font-family: $font-monserat;
+        font-size: 1.14rem;
+        line-height: 1.36rem;
+      }
+    }
+  }
+}
+
+//DARK MODE
+.dark {
+  .home { 
+    .header {
+      &__nav {
+        &__list {
+          &-link {
+            &, &:link, &:visited {
+              color: $color-white;
+            }
+
+            &:active {
+              color: $color-text-active;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .slider {
+      color: $color-white;
+
+      &__title {
+        color: $color-white;
+      }
+    }
+      
+    .footer {
+      &__share-text {  
+        color: $color-white;
+      }
+      
+      &__media {
+        &__link {
+          &, &:link, &:visited {
+            color: $color-social;
+          }
+                  
+          &:hover, &:active {
+            color: $color-white;
+          }
+        }
+      }
+      
+      &__copyright {
+          color: $color-white;
+      }
+    }
+  }
+}
