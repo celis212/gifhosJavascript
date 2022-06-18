@@ -43,8 +43,8 @@ async function showImgTrending(countStart = 0) {
     ); //imgFavorite
     favouriteImage.src =
       favouritePosition(gifInfo.id) >= 0
-        ? "../images/icon-fav-active.svg"
-        : "../images/icon-fav-hover.svg";
+        ? "./images/icon-fav-active.svg"
+        : "./images/icon-fav-hover.svg";
     favouriteImage.setAttribute("data-id", gifInfo.id);
     favouriteImage.addEventListener("click", handleClickFavourite);
 

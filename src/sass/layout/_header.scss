@@ -8,7 +8,7 @@
   }
 
   &__logo{
-    background-image: url("../../images/logo-desktop.svg");
+    background-image: url("../images/logo-desktop.svg");
     background-repeat: no-repeat;
     display: block;
     margin-right: auto;
@@ -21,7 +21,7 @@
     }
 
     @include respond(phone) {
-      background-image: url("../../images/logo-mobile.svg");
+      background-image: url("../images/logo-mobile.svg");
       height: 49px;
       width: 56px;
     }
@@ -44,7 +44,7 @@
   }
 
   &__add-btn {
-    background-image: url('../../images/button-crear-gifo.svg');
+    background-image: url('../images/button-crear-gifo.svg');
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -53,11 +53,11 @@
     width: 54px;
 
     &:hover {
-      background-image: url('../../images/CTA-crear-gifo-hover.svg');
+      background-image: url('../images/CTA-crear-gifo-hover.svg');
     }
 
     &:active, &:focus {
-      background-image: url('../../images/CTA-crear-gifo-active.svg');
+      background-image: url('../images/CTA-crear-gifo-active.svg');
     }
 
     @include respond(tab-port) {
@@ -76,22 +76,22 @@
     border-top: $color-black solid;
 
     &__logo {
-      background-image: url('../../images/logo-modo-noc.svg');
+      background-image: url('../images/logo-modo-noc.svg');
 
       @include respond(phone) {
-        background-image: url("../../images/logo-mobile-modo-noct.svg");
+        background-image: url("../images/logo-mobile-modo-noct.svg");
       }
     }
 
     &__add-btn {
-      background-image: url('../../images/CTA-crear-gifo-modo-noc.svg');
+      background-image: url('../images/CTA-crear-gifo-modo-noc.svg');
 
       &:hover {
-        background-image: url('../../images/CTA-crear-gifo-hover-modo-noc.svg');
+        background-image: url('../images/CTA-crear-gifo-hover-modo-noc.svg');
       }
 
       &:active, &:focus{
-        background-image: url('../../images/CTA-crear-gifo-active-modo-noc.svg');
+        background-image: url('../images/CTA-crear-gifo-active-modo-noc.svg');
       }
     }
   }

@@ -12,20 +12,20 @@
 }
 
 @mixin absCenter {
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 @mixin nonStyle {
   background: none;
-  color: inherit;
   border: none;
-  padding: 0;
-  font: inherit;
+  color: inherit;
   cursor: pointer;
+  font: inherit;
   outline: inherit;
+  padding: 0;
 }
 
 //  MEDIA QUERIES
@@ -40,25 +40,25 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
-    @content;
+      @content;
     }
   }
   
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
-    @content;
+      @content;
     }
   }
   
   @if $breakpoint == tab-land {
     @media (max-width: 75em) {
-    @content;
+      @content;
     }
   }
   
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
-    @content;
+      @content;
     }
   }
 }

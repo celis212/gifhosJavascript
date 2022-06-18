@@ -32,10 +32,10 @@ function fullSizeView() {
 
 // // Icon Favorite
 // let imgFavorite = document.createElement('img');
-// imgFavorite.src = "../images/icon-fav-hover.svg";
+// imgFavorite.src = "./images/icon-fav-hover.svg";
 // imgFavorite.setAttribute('class', 'icon imgFavorite');
 // imgFavorite.addEventListener('click', () => {
-//   favoriteImage.src = "../images/icon-fav-active.svg";
+//   favoriteImage.src = "./images/icon-fav-active.svg";
 //   arrayFavorites.push(showTrending[count]['url']);
 //   localStorage.setItem('sendFavorites', JSON.stringify(arrayFavorites));
 // });

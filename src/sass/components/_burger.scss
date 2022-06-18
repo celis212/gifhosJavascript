@@ -1,5 +1,4 @@
 .burger-menu {
-
   &__check {
     display: none;
   }
@@ -44,7 +43,7 @@
       margin-right: 2.6rem;
 
       @include respond(tab-port) {
-        background-image: url('../../images/burger.svg');
+        background-image: url('../images/burger.svg');
         background-repeat: no-repeat;
         display: block;
         height: 14px;
@@ -64,7 +63,7 @@
 
   &__check:checked ~ &__image &__image__icon{
     @include respond(tab-port) {
-      background-image: url('../../images/close.svg');
+      background-image: url('../images/close.svg');
     }
   }
 }
@@ -90,14 +89,14 @@ hr {
     &__image {
       &__icon {
         @include respond(tab-port) {
-          background-image: url('../../images/burger-modo-noct.svg');
+          background-image: url('../images/burger-modo-noct.svg');
         }
       }
     }
 
     &__check:checked ~ .burger-menu__image .burger-menu__image__icon {
       @include respond(tab-port) {
-        background-image: url('../../images/close-modo-noct.svg');
+        background-image: url('../images/close-modo-noct.svg');
       }
     }
   } 

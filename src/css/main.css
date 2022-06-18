@@ -1,8 +1,8 @@
 *, *::after, *::before {
-  margin: 0;
-  padding: 0;
   border: 0;
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
@@ -240,33 +240,33 @@ body {
 }
 
 #btnBack {
-  background-image: url("../../images/button-slider-left.svg");
+  background-image: url("../images/button-slider-left.svg");
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
 }
 #btnBack:hover {
-  background-image: url("../../images/Button-slider-left-hover.svg");
+  background-image: url("../images/Button-slider-left-hover.svg");
 }
 
 #btnNext {
-  background-image: url("../../images/Button-slider-right.svg");
+  background-image: url("../images/Button-slider-right.svg");
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
 }
 #btnNext:hover {
-  background-image: url("../../images/Button-slider-right-hover.svg");
+  background-image: url("../images/Button-slider-right-hover.svg");
 }
 
 .dark #btnBack {
-  background-image: url("../../images/button-slider-left-md-noct.svg");
+  background-image: url("../images/button-slider-left-md-noct.svg");
 }
 .dark #btnBack:hover {
   background-color: #ffffff;
 }
 .dark #btnNext {
-  background-image: url("../../images/button-slider-right-md-noct.svg");
+  background-image: url("../images/button-slider-right-md-noct.svg");
 }
 .dark #btnNext:hover {
   background-color: #ffffff;
@@ -286,7 +286,7 @@ body {
   margin-right: auto;
 }
 .header__logo {
-  background-image: url("../../images/logo-desktop.svg");
+  background-image: url("../images/logo-desktop.svg");
   background-repeat: no-repeat;
   display: block;
   margin-right: auto;
@@ -301,7 +301,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .header__logo {
-    background-image: url("../../images/logo-mobile.svg");
+    background-image: url("../images/logo-mobile.svg");
     height: 49px;
     width: 56px;
   }
@@ -322,7 +322,7 @@ body {
   }
 }
 .header__add-btn {
-  background-image: url("../../images/button-crear-gifo.svg");
+  background-image: url("../images/button-crear-gifo.svg");
   background-repeat: no-repeat;
   content: "";
   display: block;
@@ -331,10 +331,10 @@ body {
   width: 54px;
 }
 .header__add-btn:hover {
-  background-image: url("../../images/CTA-crear-gifo-hover.svg");
+  background-image: url("../images/CTA-crear-gifo-hover.svg");
 }
 .header__add-btn:active, .header__add-btn:focus {
-  background-image: url("../../images/CTA-crear-gifo-active.svg");
+  background-image: url("../images/CTA-crear-gifo-active.svg");
 }
 @media (max-width: 56.25em) {
   .header__add-btn {
@@ -351,21 +351,21 @@ body {
   border-top: #000000 solid;
 }
 .dark .header__logo {
-  background-image: url("../../images/logo-modo-noc.svg");
+  background-image: url("../images/logo-modo-noc.svg");
 }
 @media (max-width: 37.5em) {
   .dark .header__logo {
-    background-image: url("../../images/logo-mobile-modo-noct.svg");
+    background-image: url("../images/logo-mobile-modo-noct.svg");
   }
 }
 .dark .header__add-btn {
-  background-image: url("../../images/CTA-crear-gifo-modo-noc.svg");
+  background-image: url("../images/CTA-crear-gifo-modo-noc.svg");
 }
 .dark .header__add-btn:hover {
-  background-image: url("../../images/CTA-crear-gifo-hover-modo-noc.svg");
+  background-image: url("../images/CTA-crear-gifo-hover-modo-noc.svg");
 }
 .dark .header__add-btn:active, .dark .header__add-btn:focus {
-  background-image: url("../../images/CTA-crear-gifo-active-modo-noc.svg");
+  background-image: url("../images/CTA-crear-gifo-active-modo-noc.svg");
 }
 
 .footer {
@@ -491,12 +491,12 @@ body {
 }
 .slider__container__trending__value__buttons__icon {
   background: none;
-  color: inherit;
   border: none;
-  padding: 0;
-  font: inherit;
+  color: inherit;
   cursor: pointer;
+  font: inherit;
   outline: inherit;
+  padding: 0;
 }
 .slider__container__trending__value__buttons__dwl--icon, .slider__container__trending__value__buttons__full--icon, .slider__container__trending__value__buttons__fav--icon {
   height: 2.29rem;
@@ -575,7 +575,7 @@ body {
 }
 .search__gif__bar__button-search {
   background: none;
-  background-image: url("../../images/icon-search.svg");
+  background-image: url("../images/icon-search.svg");
   background-repeat: no-repeat;
   height: 1.43rem;
   position: absolute;
@@ -584,7 +584,7 @@ body {
 }
 .search__gif__bar__button-close {
   background: none;
-  background-image: url("../../images/close.svg");
+  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   display: none;
   height: 1.43rem;
@@ -597,10 +597,10 @@ body {
 }
 
 .dark .search__gif__bar__button-search {
-  background-image: url("../../images/icon-search-mod-noc.svg");
+  background-image: url("../images/icon-search-mod-noc.svg");
 }
 .dark .search__gif__bar__button-close {
-  background-image: url("../../images/close-modo-noct.svg");
+  background-image: url("../images/close-modo-noct.svg");
 }
 
 .burger-menu__check {
@@ -645,7 +645,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .burger-menu__image__icon {
-    background-image: url("../../images/burger.svg");
+    background-image: url("../images/burger.svg");
     background-repeat: no-repeat;
     display: block;
     height: 14px;
@@ -662,7 +662,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .burger-menu__check:checked ~ .burger-menu__image .burger-menu__image__icon {
-    background-image: url("../../images/close.svg");
+    background-image: url("../images/close.svg");
   }
 }
 
@@ -682,12 +682,12 @@ hr {
 }
 @media (max-width: 56.25em) {
   .dark .burger-menu__image__icon {
-    background-image: url("../../images/burger-modo-noct.svg");
+    background-image: url("../images/burger-modo-noct.svg");
   }
 }
 @media (max-width: 56.25em) {
   .dark .burger-menu__check:checked ~ .burger-menu__image .burger-menu__image__icon {
-    background-image: url("../../images/close-modo-noct.svg");
+    background-image: url("../images/close-modo-noct.svg");
   }
 }
 
@@ -697,7 +697,7 @@ hr {
   margin: 4.74rem 23.21rem 0 20.71rem;
 }
 #full-size .full-size__close {
-  background-image: url("../../images/close.svg");
+  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   align-self: flex-end;
   height: 1.09rem;
@@ -728,7 +728,7 @@ hr {
 }
 
 .dark #full-size .full-size__close {
-  background-image: url("../../images/close-modo-noct.svg");
+  background-image: url("../images/close-modo-noct.svg");
 }
 
 .hidden {

@@ -14,10 +14,10 @@ function handleClickFavourite(e) {
 
   if (idPosition === -1) {
     arrayFavorites.push(id);
-    element.src = "../images/icon-fav-active.svg";
+    element.src = "./images/icon-fav-active.svg";
   } else {
     arrayFavorites.splice(idPosition, 1);
-    element.src = "../images/icon-fav-hover.svg";
+    element.src = "./images/icon-fav-hover.svg";
   }
 
   SetDataLocalStorage("sendFavorites", arrayFavorites);

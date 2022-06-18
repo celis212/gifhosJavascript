@@ -38,7 +38,7 @@
 
       &__button-search {
         background: none;
-        background-image: url('../../images/icon-search.svg');
+        background-image: url('../images/icon-search.svg');
         background-repeat: no-repeat;
         height: 1.43rem;
         position: absolute;
@@ -48,7 +48,7 @@
 
       &__button-close {
         background: none;
-        background-image: url('../../images/close.svg');
+        background-image: url('../images/close.svg');
         background-repeat: no-repeat;
         display: none;
         height: 1.43rem;
@@ -72,11 +72,11 @@
       &__bar {
   
         &__button-search {
-          background-image: url('../../images/icon-search-mod-noc.svg');
+          background-image: url('../images/icon-search-mod-noc.svg');
         }
   
         &__button-close {
-          background-image: url('../../images/close-modo-noct.svg');
+          background-image: url('../images/close-modo-noct.svg');
         }
       }
     }

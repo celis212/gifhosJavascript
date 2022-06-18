@@ -25,8 +25,8 @@ function fullsizeViewTrending(position) {
   ); //imgFavorite
   favoritefullImage.src =
     favouritePosition(showTrending[position].id) >= 0
-      ? "../images/icon-fav-active.svg"
-      : "../images/icon-fav-hover.svg";
+      ? "./images/icon-fav-active.svg"
+      : "./images/icon-fav-hover.svg";
   favoritefullImage.setAttribute("data-id", showTrending[position].id);
   favoritefullImage.addEventListener("click", handleClickFavourite);
 
