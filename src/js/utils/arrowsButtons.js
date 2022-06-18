@@ -1,4 +1,4 @@
-import { showImgTrending } from "../views/trendingViewByThree.js";
+import showImgTrending from "../views/trendingViewByThree.js";
 
 // Set the next button trending
 async function btnNextTrending(e) {
