@@ -200,10 +200,12 @@
       }
     }
   }
+
+
 }
 
 #full-size {
-  &__description{
+  .full-size__description {
     &__text {
       &__user {
         color: $color-black;
@@ -216,6 +218,7 @@
         color: $color-black;
         font-family: $font-monserat;
         font-size: 1.14rem;
+        font-weight: 600;
         line-height: 1.36rem;
       }
     }
