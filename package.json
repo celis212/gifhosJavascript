@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"js/**/*.js\"",
+    "format": "prettier --write \"src/js/**/*.js\"",
     "sass": "sass --watch src/sass/main.scss src/css/main.css"
   },
   "repository": {

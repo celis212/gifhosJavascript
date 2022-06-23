@@ -1,4 +1,5 @@
 import showImgTrending from "../views/trendingViewByThree.js";
+import fullsizeViewTrending from "../views/trendingViewByOne.js";
 
 // Set the next button trending
 async function btnNextTrending(e) {
@@ -16,6 +17,7 @@ async function btnNextTrending(e) {
   if (count === 3) {
     showImgTrending(newStart);
   } else {
+    fullsizeViewTrending(newStart);
   }
 }
 
@@ -39,6 +41,7 @@ async function btnBackTrending(e) {
   if (count === 3) {
     showImgTrending(newStart);
   } else {
+    fullsizeViewTrending(newStart);
   }
 }
 

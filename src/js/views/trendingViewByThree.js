@@ -34,13 +34,13 @@ async function showImgTrending(countStart = 0) {
     // Set the title info
     const pTitleInfo = document.querySelector(
       `#gif-${countGif} .slider__container__trending__value__text__title`
-    ); //pTitle
+    );
     pTitleInfo.innerText = gifInfo.title;
 
     // Icon: Favorite
     let favouriteImage = document.querySelector(
       `#gif-${countGif} .slider__container__trending__value__buttons__fav--icon`
-    ); //imgFavorite
+    );
     favouriteImage.src =
       favouritePosition(gifInfo.id) >= 0
         ? "./images/icon-fav-active.svg"
@@ -51,7 +51,7 @@ async function showImgTrending(countStart = 0) {
     // Icon: Download
     let donwloadImage = document.querySelector(
       `#gif-${countGif} .slider__container__trending__value__buttons__dwl--icon`
-    ); //imgDownload
+    );
     donwloadImage.setAttribute("data-url", gifInfo.url);
     donwloadImage.setAttribute("data-id", gifInfo.id);
     donwloadImage.addEventListener("click", downloadImage);
@@ -59,11 +59,11 @@ async function showImgTrending(countStart = 0) {
     // Icon: Full Size
     let fullSize = document.querySelector(
       `#gif-${countGif} .slider__container__trending__value__buttons__full--icon`
-    ); //imgFullSize
-    fullSize.parentElement.addEventListener("click", () => {
-      fullSizeView();
-      fullsizeViewTrending(startTrend + countGif - 1);
-    });
+    );
+    let position = startTrend + countGif - 1;
+    fullSize.setAttribute("data-position", position);
+    fullSize.addEventListener("click", fullsizeViewTrending);
+    fullSize.addEventListener("click", fullSizeView);
   });
 
   // Next button

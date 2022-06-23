@@ -3,8 +3,16 @@ import {
   favouritePosition,
 } from "../utils/favourites.js";
 import { getDataLocalStorage } from "../utils/localStorage.js";
+import { btnNextTrending, btnBackTrending } from "../utils/arrowsButtons.js";
+import downloadImage from "../utils/download.js";
+import fullSizeView from "./fullSizeView.js";
 
-function fullsizeViewTrending(position) {
+function fullsizeViewTrending(e) {
+  const element = e.currentTarget;
+  const position = element
+    ? element.attributes["data-position"].value
+    : parseInt(e);
+
   const showTrending = getDataLocalStorage("trendingList");
 
   // Title
@@ -22,7 +30,7 @@ function fullsizeViewTrending(position) {
   // Icon: Favorite
   const favoritefullImage = document.querySelector(
     `#full-size .full-size__description__buttons__fav--icon`
-  ); //imgFavorite
+  );
   favoritefullImage.src =
     favouritePosition(showTrending[position].id) >= 0
       ? "./images/icon-fav-active.svg"
@@ -33,34 +41,26 @@ function fullsizeViewTrending(position) {
   // Icon: Download
   let donwloadImage = document.querySelector(
     `#full-size .full-size__description__buttons__dwl--icon`
-  ); //imgDownload
+  );
   donwloadImage.setAttribute("data-url", showTrending[position].url);
-  donwloadImage.setAttribute("data-id", gifInfo.id);
+  donwloadImage.setAttribute("data-id", showTrending[position].id);
   donwloadImage.addEventListener("click", downloadImage);
 
-  // Container Image - Arrows: Back
-  // sacar las arrow de aca y ponerlas en un archivo diferente
-  // aca enviaremos el position lo modificamos y lo enviamos de nuevo al fullsize
-  // debemos de separar el que permite la visualizacion del fullsize y el que cambia de gifo dentro de este fullsize
+  // Set the container
+  let imgClose = document.querySelector("a#closeFullView");
+  imgClose.addEventListener("click", fullSizeView);
 
-  // let btnBack = document.querySelector('#full-size #btnBack');
-  // btnBack.addEventListener('click', () => {
-  //   position --;
-  //   if (position < 0) {
-  //     position = 49;
-  //   }
-  //   fullSizeView(position);
-  // });
+  // Next button
+  let btnNext = document.querySelector("#full-size #btnBack");
+  btnNext.setAttribute("data-count", 1);
+  btnNext.setAttribute("data-number", position);
+  btnNext.addEventListener("click", btnNextTrending);
 
-  // Container Image - Arrows: Next
-  // let btnNext = document.querySelector('#full-size #btnNext');
-  // btnNext.addEventListener('click', () => {
-  //   position ++;
-  //   if (position > 49) {
-  //     position = 0;
-  //   }
-  //   fullSizeView(position);
-  // });
+  // Back button
+  let btnBack = document.querySelector("#full-size #btnNext");
+  btnBack.setAttribute("data-count", 1);
+  btnBack.setAttribute("data-number", position);
+  btnBack.addEventListener("click", btnBackTrending);
 }
 
 export default fullsizeViewTrending;

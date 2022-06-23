@@ -6,13 +6,6 @@ function fullSizeView() {
   // Show the full size view
   let fullSize = document.querySelector("#full-size");
   fullSize.classList.toggle("hidden");
-
-  // Set the container
-  let imgClose = document.querySelector("a#closeFullView");
-  imgClose.addEventListener("click", () => {
-    home.classList.toggle("hidden");
-    fullSize.classList.toggle("hidden");
-  });
 }
 
 // // Set the container of the full Screen btnBack, btnNext, imgFullScreen
