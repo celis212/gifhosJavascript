@@ -10,7 +10,6 @@
 
 html {
   font-size: 87.5%; // 1rem = 14px
-
   
   @include respond(tab-land) {
     font-size: 75%; // 1rem = 12px
