@@ -459,7 +459,6 @@ body {
   background-color: #572EE5;
   height: 19.64rem;
   max-width: 25.5rem;
-  min-width: 19.64rem;
   position: relative;
   width: 100%;
 }
@@ -521,6 +520,27 @@ body {
     height: 18.7rem;
   }
 }
+@media (max-width: 56.25em) {
+  .slider__container__trending__value#gif-3 {
+    display: none;
+  }
+}
+@media (max-width: 37.5em) {
+  .slider__container__trending__value#gif-2 {
+    display: none;
+  }
+}
+@media (max-width: 56.25em) {
+  .slider__container__trending {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 37.5em) {
+  .slider__container__trending {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .dark .slider {
   background-color: #222326;
 }

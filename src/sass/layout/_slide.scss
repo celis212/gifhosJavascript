@@ -27,10 +27,8 @@
       &__value {
         align-self: center;
         background-color: $color-primary;
-        // box-sizing: border-box;
         height: 19.64rem;
         max-width: 25.5rem; 
-        min-width: 19.64rem;
         position: relative;
         width: 100%;
         
@@ -87,21 +85,31 @@
 
         @include respond(tab-port) {
           height: 18.7rem;
-          // width: 22rem;  
         }
     
         @include respond(phone) {
           height: 18.7rem;
-          // width: 24.3rem;  
+        }
+
+        &#gif-3 {
+          @include respond(tab-port) {
+            display: none;
+          }
+        }
+
+        &#gif-2 {
+          @include respond(phone) {
+            display: none;
+          }
         }
       }
 
       @include respond(tab-port) {
-        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
   
       @include respond(phone) {
-        // grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
